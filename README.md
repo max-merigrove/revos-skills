@@ -6,6 +6,9 @@ Claude skills for the Merigrove RevOS product, grouped by business category.
 revos-skills/
 ├── sales/
 ├── marketing/
+│   └── revos-vsl-writer/
+│       ├── SKILL.md
+│       └── references/
 ├── branding/
 │   └── revos-carousel-copywriter/
 │       ├── SKILL.md
@@ -25,6 +28,7 @@ revos-skills/
 
 | Category | Skill | What it does |
 |---|---|---|
+| Marketing | [revos-vsl-writer](marketing/revos-vsl-writer/) | Writes a VSL or call-funnel video script from a fact-gathering intake, using a 14-section flow (hook, credibility, opportunity, price-first offer, objections, fit, CTA, proof, plus a skeptic pass for long versions), then QA-checks it. |
 | Branding | [revos-carousel-copywriter](branding/revos-carousel-copywriter/) | Turns any idea into slide-by-slide copy for an Instagram carousel or LinkedIn document post, plus a paste-ready Claude Design prompt. |
 
 ## Installing a skill
