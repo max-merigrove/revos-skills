@@ -8,6 +8,8 @@ RevOS skills for branding. One folder per skill, named `revos-<skill>`, each wit
 | [revos-carousel-copywriter](revos-carousel-copywriter/) | Turns any idea into slide-by-slide copy for an Instagram carousel or LinkedIn document post, plus a paste-ready Claude Design prompt. |
 | [revos-product-flythrough](revos-product-flythrough/) | Turns the current project or website into a 15 to 25 second product flythrough video with motion, sound effects and share copy, built and rendered with HyperFrames. Adapted from /brag (MIT); music tracks not included. |
 | [revos-product-flythrough-slim](revos-product-flythrough-slim/) | The single-file version for Claude Opus 5.5: builds the whole video with the tools already on the machine, from a project folder or a website URL. Adapted from /brag-slim (MIT). |
+| [revos-brand-consistency-scan](revos-brand-consistency-scan/) | Finds where a founder's website, LinkedIn and proposals contradict each other, quoted side by side, and gives one core line to align them on. |
+| [revos-thumbnail-builder](revos-thumbnail-builder/) | Designs finished video thumbnail PNGs from the founder's photo in three styles, tested at phone size. |
 
 ## Credits
 

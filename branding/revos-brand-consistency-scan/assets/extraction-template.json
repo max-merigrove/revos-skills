@@ -1,0 +1,172 @@
+{
+  "business": "",
+  "founder": "",
+  "founder_sells": "me",
+  "sold_by": {},
+  "locale": {
+    "country": "",
+    "english": "",
+    "paper": "",
+    "dates": "",
+    "decimal": ""
+  },
+  "date": "YYYY-MM-DD",
+  "assets": [
+    {
+      "id": "web",
+      "kind": "website",
+      "label": "Website",
+      "file": "clean/web.txt"
+    },
+    {
+      "id": "li",
+      "kind": "linkedin",
+      "label": "LinkedIn",
+      "file": "clean/li.txt"
+    },
+    {
+      "id": "prop",
+      "kind": "proposal",
+      "label": "Proposal",
+      "file": "clean/prop.txt"
+    }
+  ],
+  "excluded": [],
+  "skip": {},
+  "declined": [],
+  "facts": [],
+  "also": [],
+  "founder_said": [],
+  "answers": {
+    "who": {
+      "web": null,
+      "li": null,
+      "prop": null
+    },
+    "what": {
+      "web": null,
+      "li": null,
+      "prop": null
+    },
+    "result": {
+      "web": null,
+      "li": null,
+      "prop": null
+    },
+    "why": {
+      "web": null,
+      "li": null,
+      "prop": null
+    },
+    "next": {
+      "web": null,
+      "li": null,
+      "prop": null
+    }
+  },
+  "compatible": {
+    "who": [],
+    "what": [],
+    "result": [],
+    "why": [],
+    "next": []
+  },
+  "core_lines": [
+    {
+      "line": "",
+      "if_you_choose": "",
+      "aligns_with": {
+        "who": null,
+        "what": null,
+        "result": null,
+        "why": null,
+        "next": null
+      },
+      "gate": {
+        "picture": {
+          "pass": false,
+          "why": ""
+        },
+        "provable": {
+          "pass": false,
+          "why": ""
+        },
+        "unique": {
+          "pass": false,
+          "why": ""
+        }
+      },
+      "rationale": ""
+    },
+    {
+      "line": "",
+      "aligns_with": {
+        "who": null,
+        "what": null,
+        "result": null,
+        "why": null,
+        "next": null
+      },
+      "gate": {
+        "picture": {
+          "pass": false,
+          "why": ""
+        },
+        "provable": {
+          "pass": false,
+          "why": ""
+        },
+        "unique": {
+          "pass": false,
+          "why": ""
+        }
+      },
+      "rationale": ""
+    },
+    {
+      "line": "",
+      "aligns_with": {
+        "who": null,
+        "what": null,
+        "result": null,
+        "why": null,
+        "next": null
+      },
+      "gate": {
+        "picture": {
+          "pass": false,
+          "why": ""
+        },
+        "provable": {
+          "pass": false,
+          "why": ""
+        },
+        "unique": {
+          "pass": false,
+          "why": ""
+        }
+      },
+      "rationale": ""
+    }
+  ],
+  "recommended": 0,
+  "edits": [],
+  "decide": "",
+  "_how_to_fill": [
+    "answers.<question>.<asset id>: null when the asset never answers, otherwise {\"quote\": \"word for word from the clean copy\", \"group\": \"A\"}. Same meaning, same letter.",
+    "compatible.<question>: [[\"A\", \"B\", \"why B is a narrower or broader form of A\"]].",
+    "skip: {\"<asset id>\": {\"questions\": [\"who\", \"what\"], \"reason\": \"the founder's words\"}} for an asset aimed at a different buyer on purpose, on any question they name. excluded: [{\"label\": \"Instagram\", \"reason\": \"founder says it is personal\"}], unless that leaves fewer than two assets.",
+    "declined: [{\"asset\": \"prop\", \"question\": \"result\", \"by\": \"founder\", \"reason\": \"their words\"}] for an edit the founder turned down; \"by\": \"decision\" holds a client-facing asset's who or what until the founder answers the decision, which must name that asset.",
+    "facts: [{\"what\": \"team size\", \"cells\": [{\"asset\": \"web\", \"quote\": \"a team of four\"}, {\"asset\": \"prop\", \"quote\": \"Our team of six\"}]}] where two assets state different facts. The report leads with them; each needs an edit or [NEED: which is true].",
+    "also: [{\"what\": \"Sign-by date has passed\", \"asset\": \"prop\", \"quote\": \"word for word, optional\", \"note\": \"what to do, in one line\"}], at most six: a claim nothing else backs, a passed or weekend date, figures that do not reconcile, a typo.",
+    "founder_said: [\"Target year, use 2030.\"], the founder's own sentences from the chat that give a fact (a year, a headcount, a credential) the assets do not state; edits may then use it. Only what they said, word for word.",
+    "sold_by: {\"prop\": \"others\"} for an asset someone other than the founder sells; its edits never add the founder's I or name.",
+    "assets[].platform: instagram, tiktok, x or threads for a bio, so its length after the edits is counted (Instagram 150 characters). Leave the profile name line out of the bio's text.",
+    "core_lines[].if_you_choose: when the recommendation depends on the decision, the choice it assumes (\"women in finance and fintech\"); the report heading names it.",
+    "core_lines[].aligns_with.<question>: the group letter the line keeps, \"new\" if it says something no asset says yet, or null.",
+    "edits: [{\"asset\": \"web\", \"question\": \"who\", \"current\": \"word for word\", \"proposed\": \"the new line\", \"why\": \"short reason\"}]. For a missing answer: \"current\": null, \"after\": \"the line it goes after\".",
+    "chosen (only after the founder picks or rewrites a line, or on a return run): {\"line\": \"...\", \"by\": \"founder\" or \"memory\", \"aligns_with\": {...}, \"why\": \"...\"}.",
+    "Return run: add saved assets not pasted again with \"file\": \"<memory file>\", \"from_memory\": \"<date>\", and the agreed answers as {\"id\": \"agreed\", \"kind\": \"agreed\", \"label\": \"Your agreed answers\", \"file\": \"<memory file>\"}.",
+    "locale: country as a two-letter code (US, SG, AU, GB) read from the paste or the founder's answer, or empty when unknown; leave english, paper and dates empty unless the founder said (they follow voice.json and the country); decimal is dot or comma only when the founder answered question 5."
+  ]
+}
