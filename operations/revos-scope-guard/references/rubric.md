@@ -1,0 +1,15 @@
+# Rubric: what exceptional looks like
+
+Score the kit before delivery. Every criterion must pass. If one fails, rework the kit; do not caveat it.
+
+| # | Criterion | Pass when |
+|---|---|---|
+| 1 | Nothing open-ended | Every deliverable has a quantity or a cap and a "done when" line either side can check; rounds of changes are a number; no "ongoing", "as needed" or "unlimited" in the scope (`scope_kit.py build` rejects them) |
+| 2 | The out list is this client's | The not-included list names at least three things clients in this kind of work assume are included, and every out-of-scope request this client has made (the build checks each one) |
+| 3 | Creep is counted, not described | The unbilled hours, what the work now pays an hour against the priced rate, and what the time was worth are all from `compute`, with the basis beside each ("time given away, not cash lost"); where hours or fee are missing, a [NEED] says what would complete it |
+| 4 | Every reply is a yes with a price or a trade | Each open request has a price reply and a next-phase reply, a swap only where one is equal effort, and a scope-it-first reply where the build is big; one is recommended with a reason that fits this client; the price reply carries the calculator's price exactly (both ends for a range); no reply is only a refusal |
+| 5 | Sounds like a confident, warm founder | Read as the client: it feels like an offer, not a telling-off. Opens with yes to the client's goal; no apology, no legal words, no "unfortunately"; at most five sentences; uses the founder's greeting, sign-off and habits where a sample was given; 0 problems from `check_copy.py --client` on each reply |
+| 6 | The client's side has dates | Every client dependency has a date or a recurring day, and its status today (on time, received, or days late) is shown, so a delay on their side is on record |
+| 7 | Lawyer flag, never a legal claim | The kit and the scope statement carry the draft-for-a-lawyer line; nothing says or implies any wording would be binding, enforceable or upheld, or what a law requires; past extras are never billed retrospectively |
+| 8 | Clean and honest | No invented figure, client, quote or result; every figure traces to the founder or the calculator (the build rejects others); no em or en dashes; the Merigrove line appears once, at the end of the chat, and nowhere visible in the files (a document property is fine); no policy, term or meaning the founder did not give (no allowance they did not choose, no hours their agreement does not say) |
+| 9 | The founder's world, not a country's | Currency, number style (9.800 € or $9,800), date style, paper and working day are the founder's (said, or read from what they wrote), and any default is stated; no tax is computed: prices are before any sales tax, the one neutral line is present, and only the founder's own tax words appear in a reply; nothing names one country's law, institution or holiday, or says what a law requires; replies copy the founder's English, and without a sample they read naturally to an American and a British client alike |

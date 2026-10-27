@@ -1,0 +1,16 @@
+# Rubric: what exceptional looks like
+
+Score the output before delivery. All eight must pass. If one fails, rework the output; do not caveat it.
+
+| # | Criterion | Pass when |
+|---|---|---|
+| 1 | Word for word | Every cell in the five-question table and every "current" line in the edits is a quote from the asset it is attributed to, or says "not stated"; `verify_quotes.py` reports 0 problems |
+| 2 | Contradictions are named quotes | Each contradiction sets two specific quotes from two named assets side by side; the headline names both assets; no contradiction is described in general terms ("your tone varies"); two assets that state different facts (team size, years, client counts) lead the report, whatever their points; what a careful buyer would catch outside the five questions (a claim nothing else backs, a date that has passed, figures that do not reconcile) is in `also` and in the chat reply |
+| 3 | Counted, not judged | The score, each question's points, the ranking and the movement come from `score_consistency.py`; no figure in chat or the files was worked out by eye |
+| 4 | Where money changes hands weighs most | Client-facing assets carry the highest weight; when the proposal disagrees, it leads the ranking or the reason it does not is visible in the points |
+| 5 | Three lines through the gate | Three core lines, each with the picture, provable and only-you tests answered with a reason; the failed test is named beside any line that fails; the recommended line passes all three, keeps a personally selling founder visible and, unless the founder chose otherwise, keeps what most of the weight already shares rather than the sharpest outlier |
+| 6 | Line-level edits | Every asset that answers differently from the recommended line has, for each such question, a current line and a proposed line, or is declined by the founder or held for the decision with the reason shown; no edit says "make it clearer" or "consider"; a missing answer gets a line to add; one edit per line; a bio fits its platform after the edits; nothing the founder rejected is forced back in; an asset held for the decision gets no edit carrying the other buyer's words |
+| 7 | Nothing added, nothing leaked | No core line or edit claims a figure, result or proof the assets do not state (`[NEED: ...]` where proof is missing); no headcount, role, policy or "who leads the work" the assets do not state; a figure the founder gives in chat that does not square with what else they said is shown both ways until they pick; no client name, fee, email or phone number appears in the report, the Word file or the memory file |
+| 8 | The founder's locale, never assumed | The report prints on one page of the founder's paper (Letter in the US, Canada and Mexico, A4 elsewhere, the browser's own paper when the country is unknown), dates read their way, Claude's copy is spelt in the founder's English, no line names a country or currency the assets do not, and no line states a law, a tax rate or a compliance claim |
+
+Fresh-eyes test, applied on top: could the founder show the one-page report to a co-founder and have them agree what the conflict is in five seconds? And does the first chat reply, read alone with no file opened, give the score, the quoted conflicts, the line and a ready-to-paste rewrite before it asks anything?
