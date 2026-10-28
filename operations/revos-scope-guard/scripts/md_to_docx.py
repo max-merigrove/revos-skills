@@ -186,10 +186,11 @@ def build(md, out_path, title=None, lang="en", paper="a4"):
     """lang and paper follow the founder: en-GB, en-US or plain en; a4 or letter."""
     found, body = convert(md)
     title = title or found or "Scope kit"
+    letter = paper == "letter"
     doc = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
            '<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" '
            'xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">'
-           f'<w:body>{body}<w:sectPr><w:footerReference w:type="default" r:id="rId2"/><w:pgSz w:w="{12240 if paper == 'letter' else 11906}" w:h="{15840 if paper == 'letter' else 16838}"/>'
+           f'<w:body>{body}<w:sectPr><w:footerReference w:type="default" r:id="rId2"/><w:pgSz w:w="{12240 if letter else 11906}" w:h="{15840 if letter else 16838}"/>'
            '<w:pgMar w:top="1250" w:right="1250" w:bottom="1250" w:left="1250" w:header="500" w:footer="500" w:gutter="0"/>'
            '</w:sectPr></w:body></w:document>')
     footer = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'

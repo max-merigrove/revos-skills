@@ -111,7 +111,7 @@ def _safe_eval(expr):
         if isinstance(n, ast.UnaryOp) and type(n.op) in ops:
             return ops[type(n.op)](ev(n.operand))
         raise ValueError("not plain arithmetic")
-    return ev(ast.parse(expr, mode="eval"))
+    return ev(ast.parse(expr.strip(), mode="eval"))
 
 
 def fmt_plain(v, dp=None):
@@ -167,7 +167,8 @@ def _expr(s, label, decimal, notes, raw):
     body = re.sub(r"[^\d.eE+\-*/() ]", " ", "".join(out))
     val = _safe_eval(body)
     if notes is not None:
-        notes.append(f"{label}: {fmt_plain(val, 2)}, worked out from {re.sub(r'\s*\*\s*', ' x ', str(raw).lstrip('=').strip())}")
+        shown = re.sub(r"\s*\*\s*", " x ", str(raw).lstrip("=").strip())
+        notes.append(f"{label}: {fmt_plain(val, 2)}, worked out from {shown}")
     return val
 
 
