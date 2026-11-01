@@ -27,18 +27,19 @@ revos-skills/
 │   ├── revos-get-paid/
 │   └── revos-price-floor-calculator/
 └── building/
-    ├── revos-replica-architect/
-    ├── revos-replica-backend/
-    ├── revos-replica-brand/
-    ├── revos-replica-build/
-    ├── revos-replica-deploy/
-    ├── revos-replica-design/
-    ├── revos-replica-diff/
-    ├── revos-replica-entrepreneur/
-    ├── revos-replica-launch/
-    ├── revos-replica-recon/
-    ├── revos-replica-test/
-    └── tests/
+    └── revos-replica/
+        ├── revos-replica-architect/
+        ├── revos-replica-backend/
+        ├── revos-replica-brand/
+        ├── revos-replica-build/
+        ├── revos-replica-deploy/
+        ├── revos-replica-design/
+        ├── revos-replica-diff/
+        ├── revos-replica-entrepreneur/
+        ├── revos-replica-launch/
+        ├── revos-replica-recon/
+        ├── revos-replica-test/
+        └── tests/
 ```
 
 Inside each skill folder there is a `SKILL.md`, and where the skill needs them, `references/`, `scripts/` and `assets/` subfolders, a `LICENSE` and a `README.md`.
@@ -71,20 +72,20 @@ Inside each skill folder there is a `SKILL.md`, and where the skill needs them, 
 | Finance | [revos-cash-forecast](finance/revos-cash-forecast/) | Builds a 13-week cash forecast from a business bank export and names the first week cash drops below a safety line, in a normal and a bad quarter. |
 | Finance | [revos-get-paid](finance/revos-get-paid/) | Builds a plan to get overdue invoices paid: who to chase first, today's message in the founder's voice, dated follow-ups and a payment plan offer. |
 | Finance | [revos-price-floor-calculator](finance/revos-price-floor-calculator/) | Works out the lowest price each service offer can charge with the founder's own hours paid, and gives a raise, hold or restructure verdict. |
-| Building | [revos-replica-recon](building/revos-replica-recon/) | Reverse-engineers any app into a recon map: screens, flows, components, an inferred data model and a feature matrix, from public pages, screenshots, store listings and the user's own account. |
-| Building | [revos-replica-architect](building/revos-replica-architect/) | Plans the stack, database schema and API for the clone, and orders the build as a thin vertical slice first. |
-| Building | [revos-replica-design](building/revos-replica-design/) | Rebuilds the design system as tokens and component specs, with open fonts and icons, and checks every colour pair for WCAG contrast. |
-| Building | [revos-replica-build](building/revos-replica-build/) | Rebuilds the app screen by screen from the recon map, every state included, ticking off the feature matrix as it goes. |
-| Building | [revos-replica-backend](building/revos-replica-backend/) | Auth, database access rules, Stripe payments, email, jobs and integrations through official APIs only, plus a security checklist. |
-| Building | [revos-replica-test](building/revos-replica-test/) | Writes a test plan from the flows, Playwright end-to-end tests and bug reports by severity, and fixes S1 and S2 bugs test first. |
-| Building | [revos-replica-diff](building/revos-replica-diff/) | Scores the clone against the original: a weighted feature parity score with the missing list, and a screenshot layout diff that ignores colour. |
-| Building | [revos-replica-entrepreneur](building/revos-replica-entrepreneur/) | Reads what the app's users hate in real, linked reviews and turns it into a fix plan and a positioning angle you can sell. |
-| Building | [revos-replica-brand](building/revos-replica-brand/) | Names and rebrands the clone: name checks to run, a new palette, a logo brief, a voice, and a sweep that finds anything of the original left in the code. |
-| Building | [revos-replica-launch](building/revos-replica-launch/) | Writes the landing page, pricing and App Store and Google Play listing, and lints the listing against store limits and copycat rules. |
-| Building | [revos-replica-deploy](building/revos-replica-deploy/) | Runs the preflight gate, sets up production, gives the DNS records for your domain and ships it when you say go. |
+| Building | [revos-replica-recon](building/revos-replica/revos-replica-recon/) | Reverse-engineers any app into a recon map: screens, flows, components, an inferred data model and a feature matrix, from public pages, screenshots, store listings and the user's own account. |
+| Building | [revos-replica-architect](building/revos-replica/revos-replica-architect/) | Plans the stack, database schema and API for the clone, and orders the build as a thin vertical slice first. |
+| Building | [revos-replica-design](building/revos-replica/revos-replica-design/) | Rebuilds the design system as tokens and component specs, with open fonts and icons, and checks every colour pair for WCAG contrast. |
+| Building | [revos-replica-build](building/revos-replica/revos-replica-build/) | Rebuilds the app screen by screen from the recon map, every state included, ticking off the feature matrix as it goes. |
+| Building | [revos-replica-backend](building/revos-replica/revos-replica-backend/) | Auth, database access rules, Stripe payments, email, jobs and integrations through official APIs only, plus a security checklist. |
+| Building | [revos-replica-test](building/revos-replica/revos-replica-test/) | Writes a test plan from the flows, Playwright end-to-end tests and bug reports by severity, and fixes S1 and S2 bugs test first. |
+| Building | [revos-replica-diff](building/revos-replica/revos-replica-diff/) | Scores the clone against the original: a weighted feature parity score with the missing list, and a screenshot layout diff that ignores colour. |
+| Building | [revos-replica-entrepreneur](building/revos-replica/revos-replica-entrepreneur/) | Reads what the app's users hate in real, linked reviews and turns it into a fix plan and a positioning angle you can sell. |
+| Building | [revos-replica-brand](building/revos-replica/revos-replica-brand/) | Names and rebrands the clone: name checks to run, a new palette, a logo brief, a voice, and a sweep that finds anything of the original left in the code. |
+| Building | [revos-replica-launch](building/revos-replica/revos-replica-launch/) | Writes the landing page, pricing and App Store and Google Play listing, and lints the listing against store limits and copycat rules. |
+| Building | [revos-replica-deploy](building/revos-replica/revos-replica-deploy/) | Runs the preflight gate, sets up production, gives the DNS records for your domain and ships it when you say go. |
 
 ## Installing a skill
 
 Copy the skill folder into `~/.claude/skills/` for Claude Code, or zip the folder and upload it under Settings → Capabilities → Skills in Claude.
 
-The `building/` skills are one pack: copy all eleven `revos-replica-*` folders side by side, because some of them call each other's scripts. Run order and tools are in [building/README.md](building/README.md).
+The Replica skills in `building/revos-replica/` are one pack: copy all eleven `revos-replica-*` folders from it side by side, because some of them call each other's scripts. Run order and tools are in [building/revos-replica/README.md](building/revos-replica/README.md).
