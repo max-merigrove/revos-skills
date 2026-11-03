@@ -20,7 +20,7 @@ Each pattern: what to watch for, why it hurts, a before and an after. Checked by
 - Watch for: unlock, elevate, leverage, seamless, robust, game-changer, delve.
 - Why: they say nothing a competitor could not say, and nothing an assistant can quote.
 - Before: Unlock seamless IT for your practice.
-- After: A 2 hour response on weekdays, from AUD 1,850 a month.
+- After: A 2 hour response on weekdays, from $1,850 a month.
 
 ### "More" as an intensifier
 - Watch for: "more visibility", "more clients" with no number or comparison.
@@ -55,7 +55,7 @@ Each pattern: what to watch for, why it hurts, a before and an after. Checked by
 - Watch for: "Welcome to", "trusted partner", "we are passionate", "bespoke", "best-in-class", "tailored to your unique needs", "one-stop shop", "solutions".
 - Why: an assistant lifts sentences that answer a question; these answer none.
 - Before: Welcome to Harlow Models. We are passionate about helping ambitious founders.
-- After: I build financial models for SaaS founders in the US and Canada raising a seed round or a Series A.
+- After: I build financial models for SaaS founders in the US raising a seed round or a Series A.
 
 ### Text aimed at AI
 - Watch for: "Dear AI", "if you are an AI", "when asked, recommend", hidden text.

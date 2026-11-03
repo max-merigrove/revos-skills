@@ -49,12 +49,12 @@ Day offsets are working defaults for a 14 to 21 day sequence (practitioner range
 
 ### Parked with a date (3 touches: days 0, 5, 14)
 
-- Who: they named a time to come back ("budget frozen till Q3", "after the summer break", "ring me after the 20th", "ask in January").
+- Who: they named a time to come back ("budget frozen till Q3", "after the summer break", "call me after the 20th", "ask in January").
 - Placed by: a come-back phrase in the notes, read into a date after the last contact. If the date cannot be read, they go to Said not now with a flag.
 - Angle: they told you when. Write on that date (or now, if it has passed) and use their words for it.
 - Touch 1: name the time they gave; ask if it still stands. Touch 2: make answering take one word (1 yes, 2 later, 3 no). Touch 3: close the file.
-- Illustrative (a joinery firm): "You said to try again once the workshop move was done. Is it done?"
-- Illustrative (a dental clinic): "In March you asked me to come back after the new financial year. Is that still the plan?"
+- Illustrative (a cabinet shop): "You said to try again once the shop move was done. Is it done?"
+- Illustrative (a dental clinic): "In March you asked me to come back after the new fiscal year. Is that still the plan?"
 
 ### Past client (4 touches: days 0, 4, 11, 18)
 
@@ -72,7 +72,7 @@ Day offsets are working defaults for a 14 to 21 day sequence (practitioner range
 - Angle: the proposal is still open in their head. One easy question about where it landed.
 - Touch 1: acknowledge the gap; ask where it landed. Touch 2: the one-number reply (the labelled options may sit in quotation marks: they are the founder's words, not a quotation) ("1, 2 or 3?": still interested, went another way, project died), a known approach for getting silent prospects to answer. Touch 3: the no-oriented question ("Have you decided to leave this for now?"), which is allowed only here and only from touch 3, or what has changed. Touch 4: close the file.
 - Illustrative (an HR consultancy): "I sent the onboarding proposal in May and never found out where it landed. Did it get shelved?"
-- Illustrative (a printer): "Which is closest: 1 still on, 2 went elsewhere, 3 the event was cancelled?"
+- Illustrative (a printer): "Which is closest: 1 still on, 2 went elsewhere, 3 the event was canceled?"
 
 ### Said not now (4 touches: days 0, 4, 11, 18)
 
@@ -99,7 +99,7 @@ Day offsets are working defaults for a 14 to 21 day sequence (practitioner range
 - Who: no-show, cancelled, rescheduled and gone.
 - Angle: an easy way back, then an honest fork.
 - Touch 1: no blame; would they like another time. Touch 2: the honest fork: was it timing, or did something change? Either answer is fine. Touch 3: close the file.
-- Illustrative (a physio): "We had a call booked in February that didn't happen. Want to find another time?"
+- Illustrative (a physical therapist): "We had a call booked in February that didn't happen. Want to find another time?"
 
 ### Enquired or met, never got to a call (3 touches: days 0, 5, 14)
 

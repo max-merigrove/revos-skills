@@ -72,13 +72,13 @@ Each pattern: what to watch for, why it hurts, a before and an after. `scripts/c
 - Watch for: net 7, net 14, net 30 on its own.
 - Why: "30 days" can run from the invoice date or the month end; a date cannot be misread.
 - Before: Terms: net 30.
-- After: Payment due within 30 days of the invoice date, by Wednesday 2 December 2026.
+- After: Payment due within 30 days of the invoice date, by Wednesday, December 2, 2026.
 
 ### Agreeing with a tax belief
 - Watch for: "You're correct about the VAT", "no GST applies to that".
 - Why: the skill is not the founder's accountant.
-- Before: You're correct: the licences are a disbursement, so no VAT applies.
-- After: I've put no VAT on the licences, as you said, marked as supplied by you. Confirm that with your accountant before you send it.
+- Before: You're correct: design services aren't taxable, so no sales tax applies.
+- After: I've put no sales tax on the design work, as you said, marked as supplied by you. Confirm that with your accountant before you send it.
 
 ### Claiming a deliverable that does not exist
 - Watch for: "Your invoice is ready" before the file is built and verified.

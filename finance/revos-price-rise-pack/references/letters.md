@@ -4,9 +4,9 @@
 
 ## What every letter carries, in this order
 
-1. **Subject:** "Your fee from 1 January 2027" (the founder's word for fee, and the date).
+1. **Subject:** "Your fee from January 1, 2027" (the founder's word for fee, and the date).
 2. **Greeting:** "Hi Sarah," when the founder gave a contact name, otherwise "Hello,". Never "Dear valued client".
-3. **The new fee and the date in the first three lines,** with today's fee beside it: "From 1 January 2027, your fee will be 2,150 a month, up from 1,800." Two steps: both fees and both dates in the same line.
+3. **The new fee and the date in the first three lines,** with today's fee beside it: "From January 1, 2027, your fee will be $3,350 a month, up from $2,800." Two steps: both fees and both dates in the same line.
 4. **One reason, true and checkable,** from what the founder said (ranking in `method.md` section 8), and true for this client: the new-client price is set beside the client's own hours, and is never the reason for a fee above it. Never stacked: one reason is stronger than three. Written to the client ("you often send extra requests"), never about them ("they always send...").
 5. **What stays the same:** the founder's own line if they gave one, otherwise "the work, the way we work together and how you are invoiced".
 6. **The choice:** carry on with nothing to do (the new fee appears on the invoice dated the effective date), or reply to talk it through before the reply-by date (two weeks before the effective date, never sooner than a week after sending).
@@ -23,11 +23,11 @@ Each client page is marked **READY** or **HOLD** with the reason. HOLD when: the
 
 ## The reminder
 
-About two weeks before each effective date, one line: "A reminder that from 1 January 2027 your fee is 2,150." The dates are in the How to send page.
+About two weeks before each effective date, one line: "A reminder that from January 1, 2027 your fee is $3,350." The dates are in the How to send page.
 
 ## The silence follow-up
 
-After five working days with no reply: "Hi Sarah, a quick check that my note of 2 November 2026 reached you: from 1 January 2027 your fee is 2,150. Reply if you would like to talk it through before then." No reply after that is a yes: the new fee goes on the invoice as the letter said.
+After five working days with no reply: "Hi Sarah, a quick check that my note of November 3, 2026 reached you: from January 1, 2027 your fee is $3,350. Reply if you would like to talk it through before then." No reply after that is a yes: the new fee goes on the invoice as the letter said.
 
 ## When the founder edits the wording
 

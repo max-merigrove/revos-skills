@@ -14,21 +14,21 @@ The client-facing words: a proposal paragraph, a reply to what the client actual
 
 ## Voices
 
-- **Plain:** short sentences, the facts in order. "For projects of this size I work in stages: 50% (7.000 €) when we sign, which books your start date, then ..."
+- **Plain:** short sentences, the facts in order. "For projects of this size I work in stages: 50% ($7,000) when we sign, which books your start date, then ..."
 - **Warm:** the same terms framed as looking after both sides. "For projects of this size I like to work in stages, so neither of us is ever carrying too much: ..."
-- **Brisk:** a terms line. "Terms: 50% (7.000 €) on signing to book the start date, then ..."
+- **Brisk:** a terms line. "Terms: 50% ($7,000) on signing to book the start date, then ..."
 
 Pick the voice from the founder's own emails (or memory). Warm for a first contact unless they write briskly.
 
 ## The replies
 
-- **Long terms with payment at the end**, with a concession the script found within the limit: "60 days with everything at the end doesn't work for me on work this size. I can do 30 days on each invoice, as long as the 7.000 € deposit is paid when we sign."
+- **Long terms with payment at the end**, with a concession the script found within the limit: "60 days with everything at the end doesn't work for me on work this size. I can do 30 days on each invoice, as long as the $7,000 deposit is paid when we sign."
 - **Without a concession:** "... What I can do is fix your start date the day the first payment lands, and keep each invoice small by splitting the work into stages."
-- **Refused deposit**, with a concession: "I start every new project once the first payment is in; it's what holds your slot. If 7.000 € up front is a stretch, I can take 4.200 € now and add the difference to the first stage payment."
+- **Refused deposit**, with a concession: "I start every new project once the first payment is in; it's what holds your slot. If $7,000 up front is a stretch, I can take $4,200 now and add the difference to the first stage payment."
 - **Ongoing work, asked for long days** ("net 90"), with a concession the script found within the limit: "90 days to pay doesn't work for me on an engagement this size. I can do 30 days on each invoice, as long as each month is invoiced at its start."
-- **Contract names a different legal form:** "One small thing before we sign: the draft names Brauwerk Digital UG (haftungsbeschränkt). Could you have it changed to Brauwerk Digital GmbH, HRB 48213, so it matches your company's registered details?"
+- **Contract names a different legal form:** "One small thing before we sign: the draft names Copperline Digital Inc. Could you have it changed to Copperline Digital LLC, UBI 604512873, so it matches your company's registered details?"
 - **Ongoing work, asked to bill in arrears:** "Invoicing at the end of the month doesn't work for me on an engagement this size. What I can do is keep the 30-day window to pay, so the timing on your side barely changes."
-- **Stop, prepaid first phase:** "For a first project together I start with a short first phase, about a quarter of the work, paid in full before it starts (5.500 €). Once that is done we can plan the rest together."
+- **Stop, prepaid first phase:** "For a first project together I start with a short first phase, about a quarter of the work, paid in full before it starts ($5,500). Once that is done we can plan the rest together."
 - **Stop, declining:** "Thank you for thinking of me for this. I'm not able to take it on at the moment, and I wish you well with it."
 
 ## "Have you checked us out?" (chat only, when the founder asks what to say)

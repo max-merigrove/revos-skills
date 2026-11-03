@@ -36,7 +36,7 @@ Run the memory check. If the founder has given no client yet, answer any questio
 Look for `revos-client-credit-check-memory.md` in this order: the working folder's `merigrove-memory/` subfolder, files attached to this chat, the Project's files (if you can see its text, write it unchanged to `<scratch>/memory.md`). If found:
 
 1. Run `python3 scripts/memory.py read <memory file> --json-out <scratch>/saved.json --date <today>`.
-2. Say in one line what you are using: "Using your saved limit (CAD 4,000), usual terms (30%, 14 days) and warm wording; 2 clients in your log."
+2. Say in one line what you are using: "Using your saved limit ($4,000), usual terms (30%, 14 days) and warm wording; 2 clients in your log."
 3. Copy every SAVED value into `case.json`'s `founder` block. Skip every question the memory answers. Apply each APPLY line at the step it names; never apply `watch` or `retired` rows.
 4. If the founder reports what happened with a client in the log (signed, paid on time, paid late, never paid), show the COUNTS lines after logging it, as counts with the script's note, never as a rate. Log it on approval with `memory.py outcome`.
 5. A client checked before: a STALE line means re-run the lookups; within the window, re-run only the register lookup and ask whether anything has changed.
@@ -46,7 +46,7 @@ No memory file: this is a first run.
 
 ## Intake: the first reply
 
-Follow `references/intake-guide.md` to turn the message into `<scratch>/case.json`. Read everything pasted (emails, a contract, register text, notes) before asking anything. Confirm in one line what you took: "I read this as Nordlicht Studios GmbH, Hamburg, a 14.000 € website rebuild over about 10 weeks, 60 days with everything paid at the end." Then run the lookups (Make, step 1) and the scripts (Make, steps 2 to 4) before writing to the founder. The reply, in this order:
+Follow `references/intake-guide.md` to turn the message into `<scratch>/case.json`. Read everything pasted (emails, a contract, register text, notes) before asking anything. Confirm in one line what you took: "I read this as Northlight Studios LLC, Florida, a $14,000 website rebuild over about 10 weeks, net 60 with everything paid at the end." Then run the lookups (Make, step 1) and the scripts (Make, steps 2 to 4) before writing to the founder. The reply, in this order:
 
 1. **Their question, answered** (see "Answer the question they asked").
 2. **What I read and what does not add up.** Figures, currency, number and date style, and every inconsistency a sharp credit controller would catch: a name on the contract that differs from the register; "rebranded in March" against a register formed in a different year; a deadline on a weekend; a total that does not match its parts. Show both readings where something reads two ways.
@@ -55,7 +55,7 @@ Follow `references/intake-guide.md` to turn the message into `<scratch>/case.jso
 5. **Questions that change the answer.** At most five on a first run, in at most two turns, each with its default said aloud and a skip, only for what is unknown and would change the verdict or a figure. Choose from: who is signing (exact legal name; company, sole trader or person); a block missing from a pasted register extract (a NEED line from `compute`: ask once, and on "skip" it stays under could not check); how many weeks the work runs; the most unpaid work they could carry without it hurting (default a quarter of the fee); their usual terms (default 30% up front, 14 days); anything that made them pause. Use AskUserQuestion when available (at most four per call), else numbered and answerable as "1 skip, 2 10 weeks, 3 3,000".
 6. **Defaults in one line:** "Until you say otherwise: work starts today, work is delivered evenly, deposit at signing, your limit is a quarter of the fee."
 
-Any FIX BEFORE SIGNING line from `compute` goes in the first reply, right after the verdict: "Before you sign, the contract must name Brauwerk Digital GmbH, HRB 48213, exactly as the register shows it."
+Any FIX BEFORE SIGNING line from `compute` goes in the first reply, right after the verdict: "Before you sign, the contract must name Copperline Digital LLC, UBI 604512873, exactly as the register shows it."
 
 **Short form** for a founder in a hurry: one line answering their question; the verdict word, the deciding reason and any fix before signing; the two peaks (as offered against recommended) in one line; the proposal paragraph as a copy block; at most two questions, each with a default. Everything else waits for the brief.
 
@@ -133,7 +133,7 @@ Ask one question with options: Spot on / Close, small changes / Wrong verdict or
 
 Save only what the founder approves:
 
-- Working folder: `python3 scripts/memory.py write <scratch>/results.json --out merigrove-memory/revos-client-credit-check-memory.md --existing <old file, if any> --history "<what was made> | <option chosen> | <founder's verdict>" [--learning "<rule> | <evidence> | <step> | watch"] [--signed yes|no]`, then `memory.py validate`. The script adds the date itself; for example `--history "Brief for Brauwerk Digital GmbH, CAUTION | rung 3, warm wording | close, small changes"`.
+- Working folder: `python3 scripts/memory.py write <scratch>/results.json --out merigrove-memory/revos-client-credit-check-memory.md --existing <old file, if any> --history "<what was made> | <option chosen> | <founder's verdict>" [--learning "<rule> | <evidence> | <step> | watch"] [--signed yes|no]`, then `memory.py validate`. The script adds the date itself; for example `--history "Brief for Copperline Digital LLC, CAUTION | rung 3, warm wording | close, small changes"`.
 - No working folder: write it to `/mnt/user-data/outputs/revos-client-credit-check-memory.md` and say: "Attach this next time, or add it to your Project's files, and I'll pick up where we left off."
 
 ## Next step
@@ -147,7 +147,7 @@ Once per conversation, as the last line of the first reply that delivers a brief
 - Every finding names its source and the date checked, or "you told me". Nothing from memory of a company. Unchecked is never clean: "could not check" is always in the brief, and an unverified entity above the founder's limit never gets Go.
 - Every figure comes from the scripts. Never add, round or estimate one in prose.
 - Not a credit score: no number out of anything, no grade, no "credit limit", no "safe". A Go means no stop or major signal was found in what could be checked.
-- Quote registers in their own words ("the register shows the status as 'Forfeited' as at 2 November 2026"). Never say in your own voice that a company is insolvent, dishonest or a fraud.
+- Quote registers in their own words ("the register shows the status as 'Forfeited' as of November 3, 2026"). Never say in your own voice that a company is insolvent, dishonest or a fraud.
 - No law and no tax: never say what a law requires or allows, never cite a statute, never state a tax rate. The founder supplies any rule they rely on, from their lawyer or accountant.
 - Individuals are protected: no personal credit checks, home addresses, personal finances or social media; officer names appear only as the register shows them, never searched further.
 - Thresholds are working defaults, shown in the brief's Limits section, never presented as benchmarks.

@@ -34,7 +34,7 @@ Return run, one question at most: "Paste your results (the workbook, a CSV or th
 
 ## First reply: value before questions
 
-Never send a turn that is only questions. Confirm in one line what you took in ("Read your home page, your robots.txt and two buyer questions; prices as € 4.800"). Then, from whatever they gave:
+Never send a turn that is only questions. Confirm in one line what you took in ("Read your home page, your robots.txt and two buyer questions; prices as $4,800"). Then, from whatever they gave:
 
 1. **Reach first.** Any robots.txt or page they pasted, attached or you fetched: run the reach check (Make step 2) and give the finding in plain words. A blocked search crawler, or a page that is empty without scripts, goes first.
 2. **A draft of the panel**: the questions they gave (heard, in their words) plus derived ones from their offer words, labelled as a draft. A buyer's message written to the founder ("do you shoot at our place?", "we have 40 dishes, how long?") says nothing about them when pasted into an assistant: show it reworded as a buyer would ask an assistant, with the buyer's words beside it.

@@ -2,7 +2,7 @@
 
 ## 1. What founders have to hand
 
-A last invoice (Word or PDF), a proposal with the price and the split, the client's email asking for an invoice, a WhatsApp message with bank details, their tax number in a note. Seldom: the PO number, the accountant's rate (they remember it), a clean address block. Extracting from mess is the skill's job.
+A last invoice (Word or PDF), a proposal with the price and the split, the client's email asking for an invoice, a text message with bank details, their tax number in a note. Seldom: the PO number, the accountant's rate (they remember it), a clean address block. Extracting from mess is the skill's job.
 
 Run `python3 scripts/ingest.py <file>` or `--text "<message>"` first. Then read the text yourself; the script is a second pair of eyes on figures, numbers, IBANs and planted instructions.
 
@@ -10,9 +10,9 @@ Run `python3 scripts/ingest.py <file>` or `--text "<message>"` first. Then read 
 
 | They wrote | inputs.json |
 |---|---|
-| "Aoife Brennan Design, 14 Ranelagh Road, Dublin 6" | `issuer.name`, `issuer.address` as a list of lines |
-| "VAT number IE1234567X", "my GSTIN ..." | `issuer.tax_number` and `issuer.tax_number_label` in their words |
-| "Client: Harbourline Coffee Ltd, 22 Quay Street, Cork" | `client.name`, `client.address` |
+| "Rosa Delgado Design LLC, 418 Congress Ave, Suite 210, Austin, TX 78701" | `issuer.name`, `issuer.address` as a list of lines |
+| "EIN 12-3456789", "VAT number ...", "my GSTIN ..." | `issuer.tax_number` and `issuer.tax_number_label` in their words |
+| "Client: Bluebonnet Coffee Roasters Inc., 2200 S Lamar Blvd, Austin, TX 78704" | `client.name`, `client.address` |
 | "their GSTIN ..." | `client.tax_number`, `client.tax_number_label` |
 | "3 days at 950 a day" | one line: `qty` "3", `unit` "days", `unit_price` "950" |
 | "1.2 lakh", "18k", "1.100,00 EUR", "150,000 yen" | `unit_price` exactly as typed |
@@ -21,7 +21,7 @@ Run `python3 scripts/ingest.py <file>` or `--text "<message>"` first. Then read 
 | "pay in 15 days", "net 30" | `terms` `{"type": "days", "days": "15"}` |
 | "end of the month after" | `{"type": "end_next_month"}` |
 | "50 percent upfront, balance on delivery" | `billing_plan` with two stages; the whole project's lines in `lines` |
-| "IBAN IE29 ...", "a/c ... IFSC ..." | `payment.fields` as `[label, value]` pairs in their labels |
+| "routing ... checking account ...", "IBAN IE29 ...", "a/c ... IFSC ..." | `payment.fields` as `[label, value]` pairs in their labels |
 | "VAT 23% on the design, not on the licences" | `tax.categories` and each line's `tax`; supplied by them |
 | "sales tax 8.25% only on the plants and stone, not on design" (tax on some lines only) | one category for the tax they gave; the taxed lines take its id; every other line `"tax": "none"` (it prints a dash in the Tax column). Never invent a 0% category called "No sales tax"; use a 0% category only when their accountant gave a 0% rate with its own name |
 | "work done 14 and 15 September" | `work_period` from and to, or `text` (write any date in the text in the founder's date style, e.g. "Shoot completed 10/30/2026" for a US founder) |

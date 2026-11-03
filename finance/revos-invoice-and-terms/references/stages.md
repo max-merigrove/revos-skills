@@ -39,7 +39,7 @@ Whether a deposit is refundable, what happens on cancellation, and what it is ca
 
 ## Worked splits
 
-- 50/50 on EUR 3,200 + 2 x 450 + 86.40, 23% on the first two lines as supplied, 0% on the third: deposit 1,600.00 + 450.00 + 43.20 = 2,093.20 net, tax 471.50, EUR 2,564.70; balance the same; project EUR 5,129.40.
+- 50/50 on USD 3,200 + 2 x 450 + 186.40, sales tax 8.25% on the third line only as supplied: deposit 1,600.00 + 450.00 + 93.20 = 2,143.20 net, tax 7.69, USD 2,150.89; balance the same; project USD 4,301.78.
 - 40/40/20 on USD 9,000.00, no tax: 3,600.00, 3,600.00, 1,800.00.
-- 30/40/30 on AUD 10,000.00 + 10% as supplied: 3,000.00 + 300.00, 4,000.00 + 400.00, 3,000.00 + 300.00; project AUD 11,000.00.
+- 30/40/30 on USD 10,000.00 + 10% as supplied: 3,000.00 + 300.00, 4,000.00 + 400.00, 3,000.00 + 300.00; project USD 11,000.00.
 - Thirds on 1,000.00: 333.33, 333.33, 333.34 (the last takes the remainder).

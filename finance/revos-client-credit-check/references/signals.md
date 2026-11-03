@@ -22,7 +22,7 @@ Confidence: **verified** (a register, notices or website page read, or register 
 | R12 | Small or micro accounts only | Filing history | context | They reveal little | "Only small or micro accounts are filed" |
 | R13 | Website, domain or contact details do not match the entity | Client's website | minor | The business you met may not be the one signing | Say exactly what differs |
 | R14 | A claim the register contradicts ("8 years in business" against a company formed last year) | The register in hand, against what the client or contract says | minor | A new entity may carry none of the old business's record, and the claim was wrong | "Told: '<claim>'. The register shows: <fact>" |
-| R15 | The contract names the right business with a different legal form or a near spelling ("UG" for "GmbH", "Studio" for "Studios") | The register entry, against the contract | major, with a fix-before-signing line | The contract must name the entity that will pay, or there may be nobody to hold to it | "The contract names '<x>'; the register shows '<y>'". The brief and the first reply say: the contract must name <register name>, <number> |
+| R15 | The contract names the right business with a different legal form or a near spelling ("Inc." for "LLC", "Studio" for "Studios") | The register entry, against the contract | major, with a fix-before-signing line | The contract must name the entity that will pay, or there may be nobody to hold to it | "The contract names '<x>'; the register shows '<y>'". The brief and the first reply say: the contract must name <register name>, <number> |
 
 ## Founder-observed signals (confidence: founder reported)
 

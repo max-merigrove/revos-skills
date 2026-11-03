@@ -5,7 +5,7 @@ Structured data states who the business is and what it offers in a form engines 
 ## The default set
 
 - `entity.jsonld.json`: one block for the business. Type `ProfessionalService` for most service firms, or a closer listed type where one fits (`AccountingService`, `LegalService`, `Dentist`, `HomeAndConstructionBusiness`, `LandscapingBusiness`, `Restaurant` and others in `jsonld_check.py`). Fields only from the register: `name`, `url`, `description`, `areaServed`, `address` (town and country only unless the founder gives a street address to publish), `email` or `telephone` only if confirmed, `knowsLanguage`, `founder` as a `Person` where the founder is the brand. Use an `@graph` when there is a Person.
-- `service-<slug>.jsonld.json`: one `Service` per distinct service, saved under the slug of the page that describes it (a pricing page for the same service gets no copy; identical files are refused), with `provider` pointing at the entity's `@id`, `areaServed`, and an `Offer` whose `priceSpecification` carries the confirmed price as a plain number (`"1850"`, `"4800"`) and a three-letter currency (`"AUD"`, `"EUR"`). A range uses `minPrice` and `maxPrice`. The Offer's `description` repeats the price as the founder writes it.
+- `service-<slug>.jsonld.json`: one `Service` per distinct service, saved under the slug of the page that describes it (a pricing page for the same service gets no copy; identical files are refused), with `provider` pointing at the entity's `@id`, `areaServed`, and an `Offer` whose `priceSpecification` carries the confirmed price as a plain number (`"1850"`, `"4800"`) and a three-letter currency (`"USD"`). A range uses `minPrice` and `maxPrice`. The Offer's `description` repeats the price as the founder writes it.
 
 ## Never
 
