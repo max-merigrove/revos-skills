@@ -1,0 +1,53 @@
+{
+  "date": "YYYY-MM-DD",
+  "read_first": {
+    "read": "One sentence: where the business stands, or 'Not tested yet' and the main finding.",
+    "actions": [
+      {
+        "kind": "baseline",
+        "text": "Run the baseline before anything changes."
+      },
+      {
+        "kind": "reach",
+        "text": "Only when something blocks or hides the site: the fix and who makes it."
+      },
+      {
+        "kind": "publish",
+        "text": "Publish the pages after the baseline."
+      }
+    ]
+  },
+  "reach_notes": [
+    "Plain findings from the robots.txt and page checks, and anything that does not add up."
+  ],
+  "pages": [
+    {
+      "slug": "page-slug",
+      "title": "Page: what it is",
+      "question_ids": [
+        "Q1"
+      ],
+      "where": "Where it goes on the site.",
+      "facts_used": [
+        "Label from the fact register"
+      ],
+      "needs": []
+    }
+  ],
+  "beyond": {
+    "notes": [],
+    "actions": [
+      "At most three honest actions."
+    ]
+  },
+  "next": {
+    "fixes": [],
+    "accuracy": [],
+    "accuracy_ignore": []
+  },
+  "not_checked": [
+    "What was not seen or run."
+  ],
+  "closing": "Once your baseline is in you will know which questions name you. Whether your positioning gives an assistant a reason to recommend you over the firms it names is the next question; the Merigrove Business Audit scores it: [BUSINESS_AUDIT_URL].",
+  "closing_return_visit": "You know which questions name you and which do not. Whether your positioning gives an assistant a reason to recommend you over the firms it names is the next question; the Merigrove Business Audit scores it: [BUSINESS_AUDIT_URL]."
+}

@@ -6,3 +6,4 @@ RevOS skills for sales. One folder per skill, named `revos-<skill>`, each with a
 |---|---|
 | [revos-call-review](revos-call-review/) | Scores one sales call out of 100, finds where the deal was lost and why, and gives two coaching points with the words to say. |
 | [revos-sales-target-planner](revos-sales-target-planner/) | Works back from the profit a founder needs to the sales, calls and leads each month takes, checks it against their calendar and names what breaks first. |
+| [revos-dead-lead-revival](revos-dead-lead-revival/) | Turns old leads, stalled proposals, no-shows and lapsed clients into a dated revival plan: who went quiet and why, short messages per group and the ten to message today. Sends nothing. |

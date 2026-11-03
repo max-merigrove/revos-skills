@@ -6,9 +6,13 @@ Claude skills for the Merigrove RevOS product, grouped by business category.
 revos-skills/
 ├── sales/
 │   ├── revos-call-review/
+│   ├── revos-dead-lead-revival/
 │   └── revos-sales-target-planner/
 ├── marketing/
+│   ├── revos-buyer-language-miner/
 │   ├── revos-funnel-constraint-finder/
+│   ├── revos-get-quoted-by-ai/
+│   ├── revos-lead-magnet-factory/
 │   └── revos-vsl-writer/
 ├── branding/
 │   ├── revos-brand-consistency-scan/
@@ -24,8 +28,11 @@ revos-skills/
 │   └── revos-scope-guard/
 ├── finance/
 │   ├── revos-cash-forecast/
+│   ├── revos-client-credit-check/
 │   ├── revos-get-paid/
-│   └── revos-price-floor-calculator/
+│   ├── revos-invoice-and-terms/
+│   ├── revos-price-floor-calculator/
+│   └── revos-price-rise-pack/
 └── building/
     └── revos-replica/
         ├── revos-replica-architect/
@@ -57,8 +64,12 @@ Inside each skill folder there is a `SKILL.md`, and where the skill needs them, 
 |---|---|---|
 | Sales | [revos-call-review](sales/revos-call-review/) | Scores one sales call out of 100, finds where the deal was lost and why, and gives two coaching points with the words to say. |
 | Sales | [revos-sales-target-planner](sales/revos-sales-target-planner/) | Works back from the profit a founder needs to the sales, calls and leads each month takes, checks it against their calendar and names what breaks first. |
+| Sales | [revos-dead-lead-revival](sales/revos-dead-lead-revival/) | Turns old leads, stalled proposals, no-shows and lapsed clients into a dated revival plan: who went quiet and why, short messages per group and the ten to message today. Sends nothing. |
 | Marketing | [revos-vsl-writer](marketing/revos-vsl-writer/) | Writes a VSL or call-funnel video script from a fact-gathering intake, using a 14-section flow (hook, credibility, opportunity, price-first offer, objections, fit, CTA, proof, plus a skeptic pass for long versions), then QA-checks it. |
 | Marketing | [revos-funnel-constraint-finder](marketing/revos-funnel-constraint-finder/) | Finds the one stage of a founder's sales funnel costing the most customers, from their own rough counts, and prices the fix in clients and money a month. |
+| Marketing | [revos-buyer-language-miner](marketing/revos-buyer-language-miner/) | Writes two or three ready-to-run ads in the words buyers actually used, backed by a bank of every phrase checked word for word and counted by how many different people said it. |
+| Marketing | [revos-get-quoted-by-ai](marketing/revos-get-quoted-by-ai/) | Tests whether ChatGPT, Perplexity, Gemini and Copilot name a business for its buyers' questions, then writes the pages, structured data and llms.txt they can quote. |
+| Marketing | [revos-lead-magnet-factory](marketing/revos-lead-magnet-factory/) | Builds a finished scorecard or checklist lead magnet from the founder's own material, with the opt-in page and five follow-up emails that move the right people towards a call. |
 | Branding | [revos-brand-voice](branding/revos-brand-voice/) | Builds a measured voice guide and a ready-to-paste AI voice prompt from a founder's own writing and speech, so ChatGPT, Claude, a VA or an agency writes like them. Counts every habit with a script, keeps the founder's own spelling, phrasing, money and dates, and calibrates against their ear. |
 | Branding | [revos-carousel-copywriter](branding/revos-carousel-copywriter/) | Turns any idea into slide-by-slide copy for an Instagram carousel or LinkedIn document post, plus a paste-ready Claude Design prompt. |
 | Branding | [revos-product-flythrough](branding/revos-product-flythrough/) | Turns the current project or website into a 15 to 25 second product flythrough video with motion, sound effects and share copy, built and rendered with HyperFrames. Adapted from [/brag](https://github.com/latent-spaces/brag) by Shunit Haviv Hakimi (MIT); music tracks not included. |
@@ -72,6 +83,9 @@ Inside each skill folder there is a `SKILL.md`, and where the skill needs them, 
 | Finance | [revos-cash-forecast](finance/revos-cash-forecast/) | Builds a 13-week cash forecast from a business bank export and names the first week cash drops below a safety line, in a normal and a bad quarter. |
 | Finance | [revos-get-paid](finance/revos-get-paid/) | Builds a plan to get overdue invoices paid: who to chase first, today's message in the founder's voice, dated follow-ups and a payment plan offer. |
 | Finance | [revos-price-floor-calculator](finance/revos-price-floor-calculator/) | Works out the lowest price each service offer can charge with the founder's own hours paid, and gives a raise, hold or restructure verdict. |
+| Finance | [revos-invoice-and-terms](finance/revos-invoice-and-terms/) | Makes a complete, numbered invoice as PDF and Word, totals checked by script, tax only as the founder supplies it, plus deposit and stage invoices. |
+| Finance | [revos-client-credit-check](finance/revos-client-credit-check/) | Gives a Go, Caution or Stop verdict on whether a new client is likely to pay, with every finding sourced and dated, and the deposit and payment terms to match. |
+| Finance | [revos-price-rise-pack](finance/revos-price-rise-pack/) | Plans a price rise for existing clients: who to raise, by how much and from when, the break-even client loss, 12-month cash, a live workbook and a letter per client. |
 | Building | [revos-replica-recon](building/revos-replica/revos-replica-recon/) | Reverse-engineers any app into a recon map: screens, flows, components, an inferred data model and a feature matrix, from public pages, screenshots, store listings and the user's own account. |
 | Building | [revos-replica-architect](building/revos-replica/revos-replica-architect/) | Plans the stack, database schema and API for the clone, and orders the build as a thin vertical slice first. |
 | Building | [revos-replica-design](building/revos-replica/revos-replica-design/) | Rebuilds the design system as tokens and component specs, with open fonts and icons, and checks every colour pair for WCAG contrast. |

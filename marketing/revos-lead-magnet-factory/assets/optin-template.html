@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="%%LANG%%">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="%%AUTHOR%%">
+<meta name="generator" content="%%CREDIT%%">
+<title>%%HEADLINE%%</title>
+<style>
+:root{--text:%%TEXT%%;--bg:%%BG%%;--accent:%%ACCENT%%;--accent-text:%%ACCENT_TEXT%%;--muted:%%MUTED%%}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:%%FONT%%;font-size:1.0625rem;line-height:1.6}
+main{max-width:36rem;margin:0 auto;padding:3.5rem 1.25rem 3rem}
+h1{font-size:clamp(1.9rem,7vw,2.7rem);line-height:1.12;letter-spacing:-0.02em;font-weight:700;margin:0 0 1.1rem}
+p{margin:0 0 1rem}
+.sub{font-size:1.2rem;line-height:1.5;margin-bottom:2rem}
+ul{margin:0 0 2.5rem;padding-left:1.25rem}
+li{margin-bottom:.6rem}
+.field{display:block;margin-bottom:1.2rem}
+.field span{display:block;font-weight:600;margin-bottom:.35rem}
+.field input{width:100%;font:inherit;padding:.75rem .8rem;background:rgba(127,127,127,.13);color:var(--text);border:0}
+button{font:inherit;font-weight:650;background:var(--accent);color:var(--accent-text);border:0;padding:.95rem 1.7rem;cursor:pointer;margin-top:.4rem}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.exp{color:var(--muted);font-size:.95rem;margin-top:1.2rem}
+.sign{margin-top:2.5rem}
+footer{max-width:36rem;margin:0 auto;padding:2rem 1.25rem 3rem;color:var(--muted);font-size:.9rem}
+@media (min-width:48rem){main{padding-top:5.5rem}}
+</style>
+</head>
+<body>
+<main>
+  <h1>%%HEADLINE%%</h1>
+  <p class="sub">%%SUBHEAD%%</p>
+  <ul>%%BULLETS%%</ul>
+  %%FORM%%
+  <p class="exp">%%EXPECTATION%%</p>
+  <p class="sign">%%SIGNOFF%%</p>
+</main>
+<footer>%%FOOTER%%</footer>
+</body>
+</html>

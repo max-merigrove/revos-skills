@@ -1,0 +1,379 @@
+{
+ "spec_version": 1,
+ "format": "scorecard",
+ "date": "2026-11-02",
+ "hosting": "their own website",
+ "founder": {
+  "name": "Anna Lindqvist",
+  "first_name": "Anna",
+  "business": "Lindqvist Brand Studio",
+  "country": "SE",
+  "spelling": "british",
+  "decimal": "comma",
+  "currency": "SEK",
+  "signoff": "Anna & Erik",
+  "never_words": [],
+  "we": true
+ },
+ "offer": {
+  "name": "Brand foundation sprint",
+  "price_as_typed": "85 000 kr",
+  "price_value": 85000,
+  "link": "https://cal.example/lindqvist",
+  "route": "book"
+ },
+ "sources": [
+  "founder-paste.txt"
+ ],
+ "founder_replies": [
+  "Yes, those five are what we look at in the first meeting. Link: https://cal.example/lindqvist"
+ ],
+ "topic": {
+  "slug": "outgrown-your-brand",
+  "problem": "B2B software companies that have grown feel their brand no longer matches the company they have become.",
+  "source_line": "our brand doesn't match what we've become",
+  "source": "your opening message",
+  "runners_up": [
+   {
+    "topic": "A checklist for briefing a brand agency",
+    "why_not": "It helps buyers who have already decided; your buyers first need to see whether they have outgrown the brand."
+   },
+   {
+    "topic": "A one-page guide to brand consistency",
+    "why_not": "One idea where the feeling covers five parts of the company; a scorecard shows all five at once."
+   }
+  ],
+  "format_reason": "Founders arrive with a feeling (our brand does not match what we have become). A scorecard turns it into five answers in three minutes, and its last question tells you whether the company is big enough for a sprint.",
+  "not_given_away": "What the brand should become: the positioning and identity decisions the sprint makes with the team.",
+  "drafted": "The five areas came from me and you confirmed them. Options, fix lines, tier descriptions and emails are drafts for you to read as the experts."
+ },
+ "facts": [],
+ "look": {},
+ "magnet": {
+  "title": "Has your company outgrown its brand?",
+  "promise": "Check five places where a growing software company's brand shows its age, and see which to fix first.",
+  "minutes": 3,
+  "who_for": "For founders of B2B software companies with 10 people or more whose brand still looks like the early days.",
+  "who_not_for": "If you are fewer than 10 people, this will still help, but it is too early for a brand sprint.",
+  "questions": [
+   {
+    "id": "q1",
+    "label": "The one-line description",
+    "source": "founder confirmed in reply",
+    "text": "If you asked five people in your company what you do, in one sentence, what would you hear?",
+    "options": [
+     {
+      "label": "Five different answers",
+      "points": 0
+     },
+     {
+      "label": "Similar, but in different words",
+      "points": 1
+     },
+     {
+      "label": "The same idea, mostly",
+      "points": 2
+     },
+     {
+      "label": "The same sentence",
+      "points": 3
+     }
+    ],
+    "strength": "Your team describes the company the same way, so the brand has something solid to stand on.",
+    "fix_low": "Ask five colleagues for the one sentence this week and put the answers side by side.",
+    "fix_high": "Write the sentence your team already uses at the top of your website and your sales deck.",
+    "strength_mid": "Your team tells a similar story about the company, even if the words differ."
+   },
+   {
+    "id": "q2",
+    "label": "The website",
+    "source": "founder confirmed in reply",
+    "text": "Does your website describe the company you are now, or the one you were when it launched?",
+    "options": [
+     {
+      "label": "The one we were at launch",
+      "points": 0
+     },
+     {
+      "label": "Mostly the old one, with new pages added",
+      "points": 1
+     },
+     {
+      "label": "Mostly current",
+      "points": 2
+     },
+     {
+      "label": "Who we are now",
+      "points": 3
+     }
+    ],
+    "strength": "Your website describes the company you are today.",
+    "fix_low": "Read your home page aloud to a new hire and note every line they would not say about the company.",
+    "fix_high": "Check the pages added since launch; they are often written in a different voice from the rest.",
+    "strength_mid": "Your website mostly describes the company you are today."
+   },
+   {
+    "id": "q3",
+    "label": "The sales deck",
+    "source": "founder confirmed in reply",
+    "text": "How does your sales team use the official sales deck?",
+    "options": [
+     {
+      "label": "Each seller has their own version",
+      "points": 0
+     },
+     {
+      "label": "They use it, but rewrite half",
+      "points": 1
+     },
+     {
+      "label": "They use it with small changes",
+      "points": 2
+     },
+     {
+      "label": "They use it as it is",
+      "points": 3
+     }
+    ],
+    "strength": "Your sales team uses the same deck, so buyers meet one company, not five.",
+    "fix_low": "Collect every version of the deck your sellers use and note which slides they all changed.",
+    "fix_high": "Ask your best seller which slide they would cut, and why.",
+    "strength_mid": "Your sellers use the shared deck, with small changes of their own."
+   },
+   {
+    "id": "q4",
+    "label": "The look",
+    "source": "founder confirmed in reply",
+    "text": "How consistent do your logo, colours and type look across what you send out?",
+    "options": [
+     {
+      "label": "Every document looks different",
+      "points": 0
+     },
+     {
+      "label": "Same logo, little else",
+      "points": 1
+     },
+     {
+      "label": "Mostly consistent",
+      "points": 2
+     },
+     {
+      "label": "Consistent everywhere",
+      "points": 3
+     }
+    ],
+    "strength": "Your company looks the same wherever a buyer meets it.",
+    "fix_low": "Put your last ten outgoing documents on one table and count how many versions of the logo you see.",
+    "fix_high": "Make one shared template for the three documents you send most.",
+    "strength_mid": "Your company looks mostly the same wherever a buyer meets it."
+   },
+   {
+    "id": "q5",
+    "label": "Hiring",
+    "source": "founder confirmed in reply",
+    "text": "When you hire, how well does your brand explain why someone should join?",
+    "options": [
+     {
+      "label": "It does not come up",
+      "points": 0
+     },
+     {
+      "label": "We explain it in interviews",
+      "points": 1
+     },
+     {
+      "label": "The careers page covers some of it",
+      "points": 2
+     },
+     {
+      "label": "Candidates arrive already knowing",
+      "points": 3
+     }
+    ],
+    "strength": "Candidates arrive knowing why they would want to work with you.",
+    "fix_low": "Write down what you say in interviews about why people should join, and compare it with your careers page.",
+    "fix_high": "Ask your last two hires what made them say yes, and use their words.",
+    "strength_mid": "Your careers page tells candidates some of why they would join you."
+   }
+  ],
+  "fit_questions": [
+   {
+    "id": "f1",
+    "source": "opening message: under 10 people we're too early for them",
+    "text": "How many people work at your company?",
+    "options": [
+     {
+      "label": "Fewer than 10",
+      "fit": false
+     },
+     {
+      "label": "10 to 60",
+      "fit": true
+     },
+     {
+      "label": "More than 60",
+      "fit": true
+     }
+    ]
+   }
+  ],
+  "strength_fallback": "You now know where the gap between your brand and your company is, which is where every rebrand has to start.",
+  "tiers": [
+   {
+    "name": "Still the launch brand",
+    "min": 0,
+    "max": 5,
+    "description": "Your brand still describes the company you were at launch. Your team, your sales deck and your website each tell a slightly different story, and buyers meet a different company depending on where they look. That is normal after fast growth, and the fixes below start with the cheapest place to make it one story."
+   },
+   {
+    "name": "Partly caught up",
+    "min": 6,
+    "max": 9,
+    "description": "Parts of your brand have kept up with the company and parts have not. Usually the look is closer than the words: the logo is fine, but the team and the deck describe the company differently. The fixes below start with the gap buyers notice first."
+   },
+   {
+    "name": "Matches the company",
+    "min": 10,
+    "max": 15,
+    "description": "Your brand describes the company you are now, and your team tells the same story. What is left is keeping it that way as you hire: decks drift, pages get added, new people describe you in their own words. The lines below point to where to tighten."
+   }
+  ],
+  "door": {
+   "question": "You can see where your brand lags behind. What should it become?",
+   "sentence": "The scorecard can show the gap; it cannot decide your positioning. That is what a call is for."
+  },
+  "cta": {
+   "label": "Book a call with Anna and Erik",
+   "link": "https://cal.example/lindqvist",
+   "line": "If you are 10 people or more and the gap is real, book a call.",
+   "line_top_tier": "Your brand already matches the company on all five. A call is probably not needed yet; if you are about to grow fast, the link is here."
+  },
+  "not_a_fit": "Under 10 people it is too early for a brand sprint. The fixes above are the right start; come back when you have hired your first sales team.",
+  "footer": "Anna Lindqvist and Erik Lindqvist, Lindqvist Brand Studio"
+ },
+ "launch": {
+  "optin": {
+   "headline": "Find out whether your company has outgrown its brand",
+   "subhead": "A three-minute scorecard for B2B software founders. You get a score, what already works, and the first three things to fix.",
+   "bullets": [
+    "Where your team, website, deck, look and hiring tell different stories",
+    "Which gap to close first",
+    "Five short emails from us over a week"
+   ],
+   "fields": [
+    "First name",
+    "Email"
+   ],
+   "expectation": "You get the scorecard link straight away and five emails from us over the next week. Unsubscribe at any time.",
+   "button": "Send me the scorecard",
+   "signoff_line": "Anna & Erik"
+  },
+  "thankyou": {
+   "headline": "Your scorecard is ready",
+   "body": "Thank you. It takes about three minutes, and your answers stay on the page.",
+   "link_label": "Start the scorecard",
+   "next_step": "Reply to our first email with your score and the gap you want to close first."
+  },
+  "rules": {
+   "starts": "Someone confirms their address on the opt-in form.",
+   "stops": [
+    "They book a call.",
+    "They reply asking about a sprint."
+   ],
+   "remove_before": [
+    "Current clients",
+    "Your own test addresses"
+   ],
+   "timing_days": [
+    0,
+    1,
+    3,
+    5,
+    7
+   ]
+  },
+  "emails": [
+   {
+    "day": 0,
+    "job": "Deliver the scorecard",
+    "subjects": [
+     "Your brand scorecard",
+     "Has your company outgrown its brand?"
+    ],
+    "preview": "Five questions, three minutes, starting with what already works.",
+    "body": "Hi {{first_name}},\n\nHere is the scorecard: {{magnet_link}}\n\nIt asks about five places a growing company's brand shows its age: the sentence your team uses to describe you, your website, your sales deck, your look, and how you explain the company to people you hire.\n\nWhen the result appears, read what already works first, then pick one fix, the first on the list. One gap closed this quarter is worth more than a rebrand you keep postponing.\n\nYour answers stay on the page and are sent nowhere, so answer the way things are, not the way the brand book from launch day says they should be.\n\nTomorrow we will write about what each result tends to mean for a company your size, and where we would start.",
+    "signoff": "Anna & Erik",
+    "ps": "Question one is the fastest test. Ask five colleagues today."
+   },
+   {
+    "day": 1,
+    "job": "The weak spot by result",
+    "subjects": [
+     "What your score is telling you",
+     "Three results, three starting points"
+    ],
+    "preview": "Find your result below, then reply with your score.",
+    "body": "Hi {{first_name}},\n\nThe scorecard puts you in one of three places.\n\nStill the launch brand: start with the one sentence. Until the team describes the company the same way, a new logo will not help, because the words around it will still disagree.\n\nPartly caught up: look at the sales deck. It is where the old story and the new one meet a buyer at the same time, and your sellers have probably already rewritten it for you.\n\nMatches the company: your work is keeping it there as you hire. Give every new person the one sentence in their first week.\n\nReply with your score and the gap you want to close first. It helps us write the next emails for the people actually reading them.",
+    "signoff": "Anna & Erik",
+    "ps": "In two days: an example of one deck, before and after."
+   },
+   {
+    "day": 3,
+    "job": "A worked example, labelled as an illustration",
+    "subjects": [
+     "One sales deck, before and after",
+     "What the deck tells a buyer"
+    ],
+    "preview": "An illustration of how a deck drifts away from the company.",
+    "body": "Hi {{first_name}},\n\nThis is an illustration, not a client.\n\nA software company with forty people sells to finance teams. Its official deck opens with the founders' story and a slide on the technology. Each of its four sellers has quietly moved a customer slide to the front and deleted the technology slide.\n\nThe sellers are right. Buyers want to see a company like theirs first. But because the official deck never changed, every new seller starts from the old story and learns the right one by losing a few deals.\n\nThe fix is not a new design. It is putting the slide the sellers already chose at the front of the official deck, and writing the one sentence they all use under it.",
+    "signoff": "Anna & Erik",
+    "ps": "Next time: the question the scorecard cannot answer."
+   },
+   {
+    "day": 5,
+    "job": "The door",
+    "subjects": [
+     "What the scorecard cannot decide",
+     "The gap is the easy part"
+    ],
+    "preview": "You know where the brand lags. The harder question is what it should become.",
+    "body": "Hi {{first_name}},\n\nBy now you know where your brand lags behind your company. That is useful, and it is the easy half.\n\nThe scorecard cannot tell you what the brand should become. Which customers you lead with. Which part of the story you drop. Whether the name still fits. Those are decisions, and they are hard to make from inside the company, because everyone has a reason to keep the part they built.\n\nIf you want to try it yourself, write two versions of your one sentence: one for the company you were two years ago and one for the company you want to be in two years. Notice which one your team uses today.\n\nReply and tell us, if you like.",
+    "signoff": "Anna & Erik",
+    "ps": "In two days we will say who our brand sprint is for, and who it is not for."
+   },
+   {
+    "day": 7,
+    "job": "The one invitation",
+    "subjects": [
+     "Who our brand sprint is for",
+     "An invitation, and who it isn't for"
+    ],
+    "preview": "Six weeks, for B2B software companies with 10 people or more.",
+    "body": "Hi {{first_name}},\n\nThis is the only email in the series that asks you to book anything.\n\nOur brand foundation sprint takes six weeks and costs 85 000 kr. It is for B2B software companies with 10 people or more whose brand still describes the company they were at launch.\n\nIt is not for companies under 10 people. If that is you, the scorecard fixes are the right start, and you are welcome to come back after your first sales hires.\n\nIf it does sound like you, the first step is a call. We look at where your brand and your company have drifted apart and whether a sprint is the right way to close the gap. If it is not, we will say so.\n\nBook a time here: {{booking_link}}",
+    "signoff": "Anna & Erik",
+    "ps": "Whatever you decide, keep the one sentence. It is the cheapest brand work there is."
+   }
+  ],
+  "result_map": [
+   {
+    "when": "Still the launch brand",
+    "dealing_with": "Fast growth, a launch-era brand, and a team telling different stories.",
+    "ask": "What sentence do your sellers use to open a call?",
+    "next_step": "Offer the sprint if they have 10 people or more."
+   },
+   {
+    "when": "Partly caught up",
+    "dealing_with": "A look that has kept up and words that have not, usually in the deck.",
+    "ask": "Which slide do your sellers change first?",
+    "next_step": "Offer the sprint scoped around the story, not the logo."
+   },
+   {
+    "when": "Matches the company",
+    "dealing_with": "A current brand that needs upkeep as the company hires.",
+    "ask": "How do new hires learn to describe the company?",
+    "next_step": "Say plainly if they do not need a sprint."
+   }
+  ]
+ }
+}
