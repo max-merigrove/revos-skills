@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="%%LANG%%">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="%%AUTHOR%%">
+<meta name="generator" content="%%CREDIT%%">
+<title>%%TITLE%%</title>
+<style>
+:root{--text:%%TEXT%%;--bg:%%BG%%;--accent:%%ACCENT%%;--accent-text:%%ACCENT_TEXT%%;--muted:%%MUTED%%}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:%%FONT%%;font-size:1.0625rem;line-height:1.6}
+main{max-width:38rem;margin:0 auto;padding:3.5rem 1.25rem 3rem}
+h1{font-size:clamp(1.9rem,7vw,2.7rem);line-height:1.12;letter-spacing:-0.02em;font-weight:700;margin:0 0 1.1rem}
+h2{font-size:1.3rem;line-height:1.3;margin:0 0 .75rem;font-weight:700}
+p{margin:0 0 1rem}
+.promise{font-size:1.2rem;line-height:1.5;margin-bottom:1.4rem}
+.meta,.who{color:var(--muted);font-size:.97rem}
+.who{margin-bottom:.4rem}
+.intro{margin-bottom:3.5rem}
+fieldset{border:0;margin:0 0 2.75rem;padding:0;min-width:0}
+legend{padding:0;font-weight:650;font-size:1.15rem;line-height:1.4;margin-bottom:.9rem}
+.qnum{display:block;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;margin-bottom:.4rem}
+.opt{display:flex;gap:.8rem;align-items:flex-start;padding:.5rem 0;cursor:pointer}
+.opt input{accent-color:var(--accent);width:1.2rem;height:1.2rem;margin:.22rem 0 0;flex:none;cursor:pointer}
+.opt input:checked+span{font-weight:650}
+.fit{margin-top:4rem}
+.fit-h{font-size:1.15rem}
+.fit fieldset{margin-bottom:2.25rem}
+button,.button{display:inline-block;font:inherit;font-weight:650;background:var(--accent);color:var(--accent-text);border:0;padding:.95rem 1.7rem;cursor:pointer;text-decoration:none;line-height:1.3}
+.textbtn,a.quiet{background:none;color:var(--text);padding:.5rem 0;font-weight:600;text-decoration:underline;text-underline-offset:.2em}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.go{margin-top:1rem}
+#progress{color:var(--muted);font-size:.95rem;margin-top:.9rem}
+#result{margin-top:5rem}
+#result:focus,#r-head:focus{outline:none}
+.qtopic{display:block;color:var(--muted);font-weight:600;font-size:.97rem;margin-bottom:.3rem}
+#result section{margin-bottom:2.6rem}
+.score{font-size:clamp(3.2rem,16vw,5.2rem);font-weight:700;line-height:1;letter-spacing:-.03em;margin:0 0 .35rem}
+.of{font-size:1.05rem;color:var(--muted);margin-bottom:1.6rem}
+.tier{font-size:1.6rem;line-height:1.25;font-weight:700;margin-bottom:.6rem}
+.label{display:block;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;margin-bottom:.6rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.7rem;padding-left:.2rem}
+.door{font-size:1.2rem;line-height:1.45;font-weight:650;margin-bottom:.5rem}
+.again{margin-top:.5rem}
+footer{max-width:38rem;margin:0 auto;padding:2rem 1.25rem 3rem;color:var(--muted);font-size:.9rem}
+[hidden]{display:none!important}
+@media (min-width:48rem){main{padding-top:5.5rem}}
+@media print{
+  body{font-size:11pt}
+  main{padding:0;max-width:none}
+  .noprint,#quiz{display:none!important}
+  body:not(.has-result) #quiz{display:block!important}
+  #result{margin-top:1.5rem}
+  .intro{margin-bottom:1rem}
+  a.button,a.quiet{background:none;color:var(--text);padding:0;text-decoration:underline}
+  a.button::after,a.quiet::after{content:" (" attr(href) ")"}
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="intro">
+    <h1>%%TITLE%%</h1>
+    <p class="promise">%%PROMISE%%</p>
+    %%WHO%%
+    <p class="meta">%%TIME%%</p>
+  </div>
+
+  <div id="quiz">
+    %%QUESTIONS%%
+    %%FIT%%
+    <div class="go noprint">
+      <button type="button" id="see">See my result</button>
+      <p id="progress" aria-live="polite">0 of %%NQ%% scored questions answered.</p>
+    </div>
+  </div>
+
+  <div id="result" hidden aria-live="polite">
+    <section>
+      <h2 id="r-head" tabindex="-1">Your result</h2>
+      <p class="score" id="r-score"></p>
+      <p class="of" id="r-of"></p>
+      <p class="tier" id="r-tier"></p>
+      <p id="r-desc"></p>
+    </section>
+    <section>
+      <span class="label">What is working</span>
+      <ul id="r-working"></ul>
+    </section>
+    <section>
+      <span class="label" id="r-fix-h">Fix these first</span>
+      <ol id="r-fix"></ol>
+    </section>
+    <section>
+      <span class="label">The question this leaves open</span>
+      <p class="door">%%DOOR_Q%%</p>
+      <p id="r-door-s">%%DOOR_S%%</p>
+    </section>
+    <section id="r-cta">%%CTA%%</section>
+    <section id="r-notfit" hidden><p>%%NOTFIT%%</p></section>
+    <p class="noprint again">
+      <button type="button" class="textbtn" id="print">Print or save as PDF</button>
+      &nbsp;&nbsp;
+      <button type="button" class="textbtn" id="again">Start again</button>
+    </p>
+  </div>
+</main>
+<footer>%%FOOTER%%</footer>
+<script type="application/json" id="lm-data">%%DATA%%</script>
+<script>
+(function () {
+  var D = JSON.parse(document.getElementById('lm-data').textContent);
+  var quiz = document.getElementById('quiz');
+  var progress = document.getElementById('progress');
+  function pick(name) {
+    var el = quiz.querySelector('input[name="' + name + '"]:checked');
+    return el ? parseInt(el.value, 10) : -1;
+  }
+  function answered() {
+    var n = 0;
+    for (var i = 0; i < D.q.length; i++) { if (pick(D.q[i].id) >= 0) { n++; } }
+    return n;
+  }
+  quiz.addEventListener('change', function () {
+    progress.textContent = answered() + ' of ' + D.q.length + ' scored questions answered.';
+  });
+  function clear(el) { while (el.firstChild) { el.removeChild(el.firstChild); } }
+  function item(list, text) { var li = document.createElement('li'); li.textContent = text; list.appendChild(li); }
+  function show() {
+    var missing = [];
+    for (var i = 0; i < D.q.length; i++) { if (pick(D.q[i].id) < 0) { missing.push(i + 1); } }
+    if (missing.length) {
+      progress.textContent = 'Please answer question ' + missing.join(', ') + ' to see your result.';
+      var first = document.getElementById('fs-' + D.q[missing[0] - 1].id);
+      var r0 = first.querySelector('input');
+      if (r0) { r0.focus(); }
+      return;
+    }
+    var total = 0, rels = [];
+    for (var j = 0; j < D.q.length; j++) {
+      var q = D.q[j], p = q.p[pick(q.id)];
+      var lo = Math.min.apply(null, q.p), hi = Math.max.apply(null, q.p);
+      total += p;
+      rels.push({ i: j, rel: hi > lo ? (p - lo) / (hi - lo) : 1 });
+    }
+    var asc = rels.slice().sort(function (a, b) { return (a.rel - b.rel) || (a.i - b.i); });
+    var fix = asc.slice(0, 3);
+    var rest = asc.slice(3).sort(function (a, b) { return (b.rel - a.rel) || (a.i - b.i); });
+    var work = [];
+    for (var k = 0; k < rest.length && work.length < 2; k++) { if (rest[k].rel >= 0.5) { work.push(rest[k]); } }
+    var tier = null;
+    for (var t = 0; t < D.tiers.length; t++) { if (D.tiers[t].min <= total && total <= D.tiers[t].max) { tier = D.tiers[t]; } }
+    var notfit = false;
+    for (var f = 0; f < D.f.length; f++) {
+      var idx = pick(D.f[f].id);
+      if (idx >= 0 && D.f[f].fit[idx] === false) { notfit = true; }
+    }
+    document.getElementById('r-score').textContent = String(total);
+    document.getElementById('r-of').textContent = 'out of ' + D.max;
+    document.getElementById('r-tier').textContent = tier ? tier.name : '';
+    document.getElementById('r-desc').textContent = tier ? tier.desc : '';
+    var wl = document.getElementById('r-working'); clear(wl);
+    if (work.length) {
+      for (var w = 0; w < work.length; w++) {
+        var wq = D.q[work[w].i];
+        item(wl, work[w].rel >= 1 ? wq.strength : wq.strength_mid);
+      }
+    }
+    else { item(wl, D.fallback); }
+    var low = false;
+    var fl = document.getElementById('r-fix'); clear(fl);
+    for (var x = 0; x < fix.length; x++) {
+      var fq = D.q[fix[x].i];
+      if (fix[x].rel < 0.5) { low = true; item(fl, fq.fix_low); } else { item(fl, fq.fix_high); }
+    }
+    document.getElementById('r-fix-h').textContent = low ? 'Fix these first' : 'Where to tighten next';
+    var top = tier !== null && tier === D.tiers[D.tiers.length - 1];
+    var cl = document.getElementById('r-cta-line'), ct = document.getElementById('r-cta-top');
+    var ca = document.getElementById('r-cta-link');
+    if (cl) { cl.hidden = top; }
+    if (ct) { ct.hidden = !top; }
+    if (ca) { ca.className = top ? 'quiet' : 'button'; }
+    document.getElementById('r-cta').hidden = notfit;
+    document.getElementById('r-notfit').hidden = !notfit;
+    document.getElementById('r-door-s').hidden = notfit;
+    var res = document.getElementById('result');
+    res.hidden = false;
+    document.body.className = 'has-result';
+    progress.textContent = D.q.length + ' of ' + D.q.length + ' scored questions answered.';
+    document.getElementById('r-head').focus();
+    res.scrollIntoView();
+  }
+  document.getElementById('see').addEventListener('click', show);
+  document.getElementById('print').addEventListener('click', function () { window.print(); });
+  document.getElementById('again').addEventListener('click', function () {
+    var all = quiz.querySelectorAll('input');
+    for (var i = 0; i < all.length; i++) { all[i].checked = false; }
+    document.getElementById('result').hidden = true;
+    document.body.className = '';
+    progress.textContent = '0 of ' + D.q.length + ' scored questions answered.';
+    window.scrollTo(0, 0);
+  });
+}());
+</script>
+</body>
+</html>
