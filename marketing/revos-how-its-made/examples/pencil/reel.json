@@ -1,0 +1,314 @@
+{
+  "title": "How a pencil is made",
+  "voice": "assets/vo.mp3",
+  "transcript": "assets/transcript.json",
+  "pronounce": {
+    "lead": "led"
+  },
+  "tail": 0.9,
+  "fadeOut": 0.6,
+  "look": {
+    "exposure": 1.05,
+    "vignette": 0.6,
+    "grain": 0.03
+  },
+  "bloom": {
+    "strength": 0.45,
+    "radius": 0.5,
+    "threshold": 0.85
+  },
+  "shots": [
+    {
+      "id": "hook",
+      "marks": {
+        "lead": "lead",
+        "xray": "never"
+      },
+      "callouts": [
+        {
+          "text": "Lead?",
+          "anchor": "tip",
+          "at": "lead",
+          "until": "never",
+          "lead": 130,
+          "angle": 125,
+          "down": true
+        },
+        {
+          "text": "Not lead",
+          "anchor": "core",
+          "at": "never",
+          "lead": 190,
+          "angle": -28
+        }
+      ]
+    },
+    {
+      "id": "mix",
+      "at": "It's",
+      "marks": {
+        "swirl": "mixed",
+        "dough": "dough"
+      },
+      "callouts": [
+        {
+          "text": "Graphite",
+          "anchor": "gpile",
+          "at": "graphite",
+          "until": "mixed",
+          "lead": 150,
+          "angle": -12
+        },
+        {
+          "text": "Clay",
+          "anchor": "cpile",
+          "at": "clay",
+          "until": "into",
+          "lead": 150,
+          "angle": 12
+        }
+      ]
+    },
+    {
+      "id": "grade",
+      "at": "More",
+      "marks": {
+        "harder": "harder",
+        "darker": "darker",
+        "hb": "HB"
+      },
+      "callouts": [
+        {
+          "text": "Harder",
+          "anchor": "c0",
+          "at": "harder",
+          "until": "That's",
+          "lead": 160,
+          "angle": 22
+        },
+        {
+          "text": "Darker",
+          "anchor": "c4",
+          "at": "darker",
+          "until": "That's",
+          "lead": 160,
+          "angle": -22
+        }
+      ],
+      "stats": [
+        {
+          "num": "HB",
+          "anchor": "c2",
+          "at": "HB",
+          "lead": 190
+        }
+      ]
+    },
+    {
+      "id": "extrude",
+      "at": "The",
+      "marks": {
+        "push": "pushed",
+        "cut": "cut"
+      },
+      "callouts": [
+        {
+          "text": "Die",
+          "anchor": "die",
+          "at": "pushed",
+          "until": "cut",
+          "lead": 120,
+          "angle": -35
+        }
+      ]
+    },
+    {
+      "id": "kiln",
+      "at": "baked",
+      "marks": {
+        "heat": "baked",
+        "stone": "stone"
+      },
+      "stats": [
+        {
+          "num": 1000,
+          "from": 20,
+          "unit": "°C",
+          "anchor": "tray",
+          "at": "1000|thousand",
+          "lead": 330,
+          "angle": -10
+        }
+      ]
+    },
+    {
+      "id": "slat",
+      "at": "Then",
+      "marks": {
+        "slice": "sliced",
+        "cut": "machine"
+      },
+      "callouts": [
+        {
+          "text": "Cedar",
+          "anchor": "slat",
+          "at": "cedar",
+          "until": "machine",
+          "lead": 160,
+          "angle": -15
+        },
+        {
+          "text": "9 grooves",
+          "anchor": "cutter",
+          "at": "nine",
+          "lead": 170,
+          "angle": 12
+        }
+      ]
+    },
+    {
+      "id": "fill",
+      "at": "lead-0.05",
+      "in": "dissolve",
+      "marks": {
+        "drop": "drops",
+        "glue": "glue",
+        "close": "second"
+      },
+      "callouts": [
+        {
+          "text": "Glue",
+          "anchor": "glue",
+          "at": "glue",
+          "until": "second",
+          "lead": 150,
+          "angle": 15
+        }
+      ]
+    },
+    {
+      "id": "shape",
+      "at": "Cutters",
+      "in": "dissolve",
+      "marks": {
+        "cut": "Cutters",
+        "split": "splits"
+      },
+      "stats": [
+        {
+          "num": 9,
+          "from": 1,
+          "unit": "pencils",
+          "anchor": "mid",
+          "at": "nine",
+          "lead": 220,
+          "angle": -8
+        }
+      ]
+    },
+    {
+      "id": "paint",
+      "at": "Then",
+      "marks": {
+        "coats": "coats",
+        "band": "band",
+        "eraser": "eraser"
+      },
+      "stats": [
+        {
+          "num": 10,
+          "from": 1,
+          "unit": "coats",
+          "anchor": "body",
+          "at": "10",
+          "until": "band",
+          "lead": 200,
+          "angle": -30
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "at": "So",
+      "marks": {
+        "found": "found",
+        "marked": "marked"
+      },
+      "stats": [
+        {
+          "num": "1500s",
+          "x": 540,
+          "y": 560,
+          "at": "1500s",
+          "until": "found"
+        }
+      ],
+      "callouts": [
+        {
+          "text": "Black lead",
+          "anchor": "rock",
+          "at": "called",
+          "lead": 170,
+          "angle": -20
+        }
+      ]
+    },
+    {
+      "id": "payoff",
+      "at": "And",
+      "marks": {
+        "stuck": "stuck"
+      },
+      "stats": [
+        {
+          "num": 450,
+          "from": 0,
+          "unit": "years",
+          "x": 540,
+          "y": 560,
+          "at": "450"
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "at": "Follow",
+      "in": "dissolve"
+    }
+  ],
+  "captions": {
+    "fix": {
+      "1000": "1,000",
+      "gray": "grey",
+      "follow": "Follow"
+    },
+    "highlight": [
+      "lead",
+      "graphite",
+      "HB",
+      {
+        "w": "spaghetti",
+        "emoji": "🍝"
+      },
+      {
+        "w": "1000|thousand",
+        "emoji": "🔥"
+      },
+      {
+        "w": "cedar",
+        "emoji": "🌲"
+      },
+      "nine",
+      {
+        "w": "sandwich",
+        "emoji": "🥪"
+      },
+      "six",
+      "coats",
+      "lead",
+      "1500s",
+      "450",
+      "Follow"
+    ]
+  }
+}

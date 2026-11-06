@@ -12,6 +12,7 @@ revos-skills/
 │   ├── revos-buyer-language-miner/
 │   ├── revos-funnel-constraint-finder/
 │   ├── revos-get-quoted-by-ai/
+│   ├── revos-how-its-made/
 │   ├── revos-lead-magnet-factory/
 │   └── revos-vsl-writer/
 ├── branding/
@@ -70,6 +71,7 @@ Inside each skill folder there is a `SKILL.md`, and where the skill needs them, 
 | Marketing | [revos-buyer-language-miner](marketing/revos-buyer-language-miner/) | Writes two or three ready-to-run ads in the words buyers actually used, backed by a bank of every phrase checked word for word and counted by how many different people said it. |
 | Marketing | [revos-get-quoted-by-ai](marketing/revos-get-quoted-by-ai/) | Tests whether ChatGPT, Perplexity, Gemini and Copilot name a business for its buyers' questions, then writes the pages, structured data and llms.txt they can quote. |
 | Marketing | [revos-lead-magnet-factory](marketing/revos-lead-magnet-factory/) | Builds a finished scorecard or checklist lead magnet from the founder's own material, with the opt-in page and five follow-up emails that move the right people towards a call. |
+| Marketing | [revos-how-its-made](marketing/revos-how-its-made/) | Makes a 60 to 90 second vertical "how it's made" 3D explainer reel: researches the real process, writes the script and the shot-by-shot build prompt, stops for approval, then builds and renders it in HyperFrames + Three.js with the bundled kit. Includes a set-up checklist, an installer and a worked pencil example. |
 | Branding | [revos-brand-voice](branding/revos-brand-voice/) | Builds a measured voice guide and a ready-to-paste AI voice prompt from a founder's own writing and speech, so ChatGPT, Claude, a VA or an agency writes like them. Counts every habit with a script, keeps the founder's own spelling, phrasing, money and dates, and calibrates against their ear. |
 | Branding | [revos-carousel-copywriter](branding/revos-carousel-copywriter/) | Turns any idea into slide-by-slide copy for an Instagram carousel or LinkedIn document post, plus a paste-ready Claude Design prompt. |
 | Branding | [revos-product-flythrough](branding/revos-product-flythrough/) | Turns the current project or website into a 15 to 25 second product flythrough video with motion, sound effects and share copy, built and rendered with HyperFrames. Adapted from [/brag](https://github.com/latent-spaces/brag) by Shunit Haviv Hakimi (MIT); music tracks not included. |

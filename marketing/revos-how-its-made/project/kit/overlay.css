@@ -1,0 +1,210 @@
+/* How-it's-made overlay kit. Sizes are for a 1080 x 1920 canvas (STYLE.md section 4).
+   build-reel.mjs inlines this file into the world, captions and plates scenes. */
+
+@font-face {
+  font-family: "HM Emoji";
+  src: local("Apple Color Emoji");
+}
+
+/* ---------- callouts and stats (positioned on a 3D anchor by studio.js) ---------- */
+.hm-callout,
+.hm-stat {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  z-index: 5;
+}
+.hm-in {
+  --k: 0;
+  --draw: 0;
+  --text: 0;
+  --lead: 150px;
+  --angle: 0deg;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: var(--k);
+}
+.hm-dot {
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.55), 0 0 0 3px rgba(0, 0, 0, 0.25);
+  transform: scale(var(--draw));
+}
+.hm-leader {
+  position: absolute;
+  left: -1px;
+  top: calc(-1 * var(--lead));
+  width: 2px;
+  height: var(--lead);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6));
+  transform-origin: 50% 100%;
+  transform: rotate(var(--angle)) scaleY(var(--draw));
+}
+.hm-tip {
+  position: absolute;
+  left: calc(sin(var(--angle)) * var(--lead));
+  top: calc(-1 * cos(var(--angle)) * var(--lead));
+  width: 0;
+  height: 0;
+}
+.hm-label {
+  position: absolute;
+  left: 0;
+  bottom: 14px;
+  transform: translate(-50%, calc((1 - var(--text)) * 12px));
+  opacity: var(--text);
+  white-space: nowrap;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.75);
+}
+.hm-down .hm-label {
+  bottom: auto;
+  top: 14px;
+}
+.hm-stat .hm-label {
+  letter-spacing: 0.01em;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 34px;
+}
+.hm-stat .hm-num {
+  font-weight: 700;
+  font-size: 76px;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+.hm-stat .hm-num-after {
+  font-weight: 700;
+  font-size: 76px;
+}
+.hm-nolead .hm-dot,
+.hm-nolead .hm-leader {
+  display: none;
+}
+
+/* ---------- captions ---------- */
+.hm-cap {
+  position: absolute;
+  left: 0;
+  top: 236px;
+  width: 1080px;
+  padding: 0 90px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  color: #fff;
+  overflow: visible;
+}
+.hm-cap .w {
+  display: none; /* each word joins the line when it is spoken, so the line re-centres */
+  margin: 0 0.12em;
+  color: rgba(255, 255, 255, 0.42);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55);
+}
+.hm-cap .w.kw {
+  position: relative;
+  padding: 0 0.12em;
+}
+.hm-cap .kw .box {
+  position: absolute;
+  inset: -0.06em -0.02em -0.02em -0.02em;
+  border: 2.5px solid #4c8df6;
+  border-radius: 4px;
+}
+.hm-cap .kw .hd {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2.5px solid #4c8df6;
+  box-sizing: border-box;
+}
+.hm-cap .kw .hd.a {
+  left: -7px;
+  top: calc(-0.06em - 7px);
+}
+.hm-cap .kw .hd.b {
+  right: -7px;
+  bottom: calc(-0.02em - 7px);
+}
+.hm-cap .emo {
+  display: inline-block;
+  margin-right: 0.18em;
+  font-family: "HM Emoji", sans-serif;
+  font-size: 0.86em;
+}
+
+/* ---------- plates (analogy objects, prints, archive) ---------- */
+.hm-plate {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.hm-plate .bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 42%, #24201c 0%, #0c0b0a 70%);
+}
+.hm-plate img.full {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1080px;
+  height: 1920px;
+  object-fit: cover;
+}
+.hm-plate .print {
+  position: absolute;
+  left: 230px;
+  top: 640px;
+  width: 620px;
+  padding: 22px 22px 70px;
+  background: #ece6d8;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.7), 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.hm-plate .print img {
+  display: block;
+  width: 100%;
+  filter: grayscale(1) contrast(1.05);
+}
+.hm-plate .print-name {
+  position: absolute;
+  left: 0;
+  width: 1080px;
+  top: 560px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+}
+.hm-plate .year {
+  position: absolute;
+  left: 0;
+  width: 1080px;
+  top: 820px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 150px;
+  color: #fff;
+  text-shadow: 0 6px 40px rgba(0, 0, 0, 0.6);
+}
