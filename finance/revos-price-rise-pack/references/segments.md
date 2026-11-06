@@ -13,7 +13,7 @@
 
 ## Call first
 
-A flag on any group except Hold, kept to a short list so it ranks someone: of the clients with tenure of at least four years or in the largest quarter by annual fee, only the largest by annual fee, one for every three letters and at most three. The founder rings these before the letter goes, using the call outline, and sends the letter the same day as the written record. Both thresholds are working defaults; a founder who says "calls for anything over 2,000 a month" is giving a learning to propose.
+A flag on any group except Hold, kept to a short list so it ranks someone: of the clients with tenure of at least four years or in the largest quarter by annual fee, only the largest by annual fee, one for every three letters and at most three. The founder rings these before the letter goes, using the call outline, and sends the letter the same day as the written record. Both thresholds are working defaults; a founder who says "calls for anything over $2,000 a month" is giving a learning to propose.
 
 ## What must be true before each letter goes
 

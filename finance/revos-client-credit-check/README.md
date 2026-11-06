@@ -22,7 +22,7 @@ Before you sign, find out whether a new client is likely to pay. Give it the com
 
 > Use revos-client-credit-check. New client: (company name and country), (the fee), about (how many weeks), and they want (their payment terms). Here's anything I have: (paste emails, notes, a register page).
 
-Rough is fine: "Sunrise Agro Foods Pvt Ltd, Pune, 4.5 lakh for 12 weeks, they want 90 days after delivery, I can't carry more than 1 lakh unpaid" is enough to start.
+Rough is fine: "Sunrise Provisions Inc., Charlotte NC, $45k for 12 weeks, they want 90 days after delivery, I can't carry more than $10k unpaid" is enough to start.
 
 ## What you get
 

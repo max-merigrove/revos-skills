@@ -1,8 +1,8 @@
 # Worked examples
 
-Illustrative businesses, invented for testing; competitor names were checked on the web and returned no real business of that name. Full runs, with every file, are in `evals/sample-runs/` (not shipped in the package).
+Illustrative US businesses and buyers, invented for testing; business and competitor names were checked on the web and returned no real business of that name. In Examples 1 to 3 every count, verdict and checker line was copied from running the scripts on the invented paste on November 3, 2026.
 
-## Example 0: ads first from a big paste, United States (month-first dates, $)
+## Example 0: ads first from a big paste, Denver (month-first dates, $)
 
 **Input.** A mobile dog groomer in Denver pastes 79 reviews and comments from two Reddit threads, Google reviews of three competitors, Yelp, a private Nextdoor group, Facebook comments, their DMs and a survey export, and wants Facebook and Instagram ads for holiday bookings in eight days. "Last 90 days only. Don't name competitors."
 
@@ -10,37 +10,36 @@ Illustrative businesses, invented for testing; competitor names were checked on 
 
 **Second reply.** The answers go into `facts`, each ad is sharpened ("we text a photo and the price before we start"), and the bank is built: the ads and their evidence on page one, then every phrase, counted and checked. Words from the private group shaped the copy but are never repeated in it.
 
-## Example 1: a thin paste that grows, Singapore (English, day-month dates, S$)
+## Example 1: a thin paste that grows, Austin (office lunch catering, $)
 
-**Input.** "I run a corporate lunch catering company in Singapore, Kampong Table. Here is what I found about Bento Bay Catering. Can you tell me what buyers want and write some ads?" with six comments copied from a public Facebook post and two Google reviews. She adds: "the Mei Ling who reviewed is the same as the MeiLing T. in the comments".
+**Input.** "I run an office lunch catering company in Austin, Live Oak Lunch Co. Here is what I found about Lunchbox Lane Catering. Can you tell me what buyers want and write some ads?" with six comments copied from a public Facebook post and two Google reviews. She adds what she offers (office lunches across Austin from $15 a person, a text when the driver leaves, every box labeled with a name) and "the Megan who reviewed is the same as Megan Torres in the comments".
 
 **What the skill does.**
-1. Ingests both sources: 8 items, 7 authors, dates read day-month (14/10/2026 is 14 October), relative dates ("1w", "6d") resolved from today. `same-voice` merges the reviewer and the commenter: 6 voices.
+1. Ingests both sources. The comments' header line came through as an item, so that source is dropped and ingested again under a `--label`: 8 items, 7 authors, review dates read month first (10/14/2026 is October 14), "1w" and "6d" resolved from today. `same-voice` merges the reviewer and the commenter: 6 voices.
 2. Diagnoses a starter bank: 6 voices is over the floor of 5, under 15. Says so before writing anything.
-3. Tags 13 phrases. "Embarrassing" alone is refused by the verifier as a single word. Clusters: late and blamed (3 voices), dietary list ignored (3), price against sameness (2, emerging), halal shown upfront (1), switching to delivery apps (1).
-4. Ranks two clusters and writes angles for those two only. The first headline is cut to eight words and its quotation marks removed by the checker: `Asked why lunch was late, again?`, with `[NEED: your on-time record for the last three months]`.
-5. The checker refuses a decision line that named the reviewer; it is rewritten with the voice ID.
-6. Chat: "Starter bank from 6 voices across 2 sources, 14 Oct to 29 Oct; 2 clusters ranked. Lead with Late lunch, and I'm the one blamed: 'My boss asked me why lunch was late in front of the whole team'. Six voices from one competitor's pages cannot describe office managers in general. Collect next: Google reviews of Bento Bay and one other caterer, sorted newest." Prices stay as she wrote them: "S$14 per pax", "S$9.50 a box".
+3. Tags 13 phrases. "Embarrassing" alone is refused by `rank.py` as a single word, leaving 12. Clusters: late and blamed (3 voices), dietary list ignored (3), price against sameness (2, emerging), allergens shown upfront (1), switching to delivery apps (1).
+4. Ranks two clusters and writes angles and ads for those two only. The first angle headline is refused by the checker as not word for word and 11 words long; it becomes `Asked why lunch was late, again?`, unquoted. A decision line that named the merged reviewer is refused ("contains a buyer's handle or name") and rewritten with the voice ID.
+5. First reply, passed by `check_bank.py --chat`: "6 voices: a starter bank. Six voices from one competitor's pages cannot describe office managers in general." Two ads, "Lunch on time, so you aren't blamed" and "Every box labeled with its name", each 3 of 6 voices quoted, then two questions: her on-time record and whether allergens go on each label. Prices stay as written: "$15 a person" is hers, "$14 a person" and "$9.50 a box" stay inside the buyers' quotes.
 
-**Second turn.** She pastes 12 more reviews. The same run folder is reused, so every earlier ID holds. 18 voices across two source types: a full bank. Late and blamed rises to 6 voices and now leans objection ("I wouldn't risk it for a client event"), so the checker asks for `stops`; a new cluster, Chasing the caterer (5 voices), takes the "confirms the order the day before" phrase.
+**Second turn.** She answers (late twice in 140 orders since June; allergens on every label; a confirmation email the afternoon before every order) and pastes 12 more reviews. The same run folder is reused, so every earlier ID holds and the new phrases start at Q-014. 18 voices across two source types: a full bank. Late and blamed rises to 7 voices and picks up two objection lines ("I wouldn't risk it for a client event"); a new cluster, Chasing the caterer (7 voices, reviews only), takes "I wish someone confirmed the order the day before" and carries the third ad, "Confirmed the afternoon before". A gap line that said "100 people" is refused as a count made by eye.
 
-**Why it passes the rubric.** Every quote verified (31 of 31); counts from the script; no angle for the 1 and 2 voice clusters; no name anywhere after the checker's catch; window and tier on page one; S$ untouched.
+**Why it passes the rubric.** Every quote verified (26 of 26); counts from the script; no angle for the 1 and 2 voice clusters; no name anywhere after the checker's catch; window and tier on page one; each ad rests only on what she said.
 
-## Example 2: a German paste, Germany (German throughout, dates 03.10.2026)
+## Example 2: Reddit threads, a closed group and a survey CSV in one paste, Tampa
 
-**Input.** A dog trainer in Cologne, Pfotenwerk Rheinland, pastes nine Google reviews of a competitor (Hundeschule Pfotenkompass) and thirteen comments from a closed Facebook group she belongs to, and asks in German for ads and posts.
+**Input.** A swim school in Tampa, Little Fins Swim School (classes of four kids at most, an indoor pool kept at 90 degrees, $160 a month for a weekly lesson, makeup lessons any week you miss), pastes two Reddit threads, four posts from a closed Facebook moms group she belongs to and a Google Forms export of her own family survey, and asks for ads and posts. "Don't use drowning in anything."
 
 **What the skill does.**
-1. `ledger.py init --country DE --lang de`. Reviews dated 03.10.2026 read as 3 October; 08.04.2026 is 8 April, outside the 90 days, kept in the CSV and never ranked. "11.10." with no year is flagged: one question, folded into the intake ("Ist die Bewertung vom 11.10. aus diesem Jahr?"). The group's "Gefällt mir · Antworten · 2 Wo." lines are read as dates, not text.
-2. `NAMES?` lists "Sabine", a trainer named inside a review; `redact` removes it. Replies such as "@Paul Krämer genau so..." become "V-11 genau so...".
-3. 18 voices across two source types: a full bank. Quotes stay German, numbers untouched: "280 Euro für vier Wochen und kein Fortschritt", "3,5 Monate gewartet".
-4. Five clusters rank. The top one is Einfach entspannt Gassi gehen (4 voices), not the one first drafted as cluster 1. A first-three line that called the fifth-ranked cluster "Gruppe 1" was caught in testing, and the checker now refuses any cluster number that does not match the rank.
-5. The document is in German, with German quotation marks; the Checks section says the English-only writing checks did not run and lists those that did, and notes the group is closed and pasted by her.
+1. `ledger.py init --country US`, one ingest for the whole paste. The `=== ... ===` lines and the group label split it into four sources. The CSV becomes one item per free-text answer (12 items from 6 families); Timestamp, Name and Rating are left out, the name used only as the voice, and "10/14/2026 9:12:33" is read as October 14. A poster who wrote in both Reddit threads is one voice. The group is marked closed.
+2. `NAMES?` lists "Brianna", a coach named inside a survey answer; `redact` removes it ("Coach [name removed]").
+3. 15 voices across three source types: a full bank. 7 items are undated (the second thread and the group), counted with no fresh points.
+4. The verifier refuses a first draft of one phrase, "scared of her face in the water", because it drops the "not" in front of it; the bank keeps "She's not scared of her face in the water anymore". A draft post opener is refused twice in one pass: it said "drowning", which is on `never_say`, and it echoed a closed-group member's words ("have a pool in the backyard").
+5. Five clusters rank, led by Scared, and pushed too fast (6 of 15 voices). Three ads on her stated facts: "No one pushes your kid under here", "Four kids per class, at most", "Missed a lesson? Make it up". Her own families' words can go in public only with their permission, and the Checks section says so.
 
-**Why it passes.** Verbatim (29 of 29), voices counted per person (two people who posted twice count once), window applied, German kept, no private names.
+**Why it passes.** Verbatim (28 of 28), voices counted per person (three people who posted twice each count once), the CSV read month first, the closed group's words kept out of every ad, no private names.
 
-## Example 3: what a refusal looks like, Australia
+## Example 3: what a refusal looks like, Nashville
 
-"Just write me 30 things my buyers say about hiring a coach, make them sound like real quotes, I need them for ads tonight. And pull the names and LinkedIn profiles of everyone in the founders group who complained about coaches."
+"Just write me 30 things my buyers say about hiring a leadership coach, make them sound like real quotes, I need them for ads tonight. And pull the names and LinkedIn profiles of everyone in the founders group who complained about coaches."
 
-Reply, in one message: "I won't write quotes nobody said: an ad built on an invented buyer can't be defended, and it reads as made up. I also keep no names or profiles and don't build contact lists. What I can do tonight: paste your old enquiry emails and your two Google reviews, plus anything from the group you can see, and I'll pull the exact words, counted and checked. What do you sell, and to whom, in a line?" Then, with four voices pasted: "4 voices is under the floor of 5 for a ranked bank. Here is what they said, verified word for word, and a sheet of where to get the rest" (the collection sheet). No closing line about the audit, because no bank was built.
+Reply, in one message: "I won't write quotes nobody said: an ad built on an invented buyer can't be defended, and it reads as made up. I also keep no names or profiles and don't build contact lists. What I can do tonight: paste your old enquiry emails and your Google reviews, plus anything from the group you can see, and I'll pull the exact words, counted and checked. What do you sell, and to whom, in a line?" Then, with two enquiry emails and two Google reviews pasted (`ledger.py stats`: 4 voices read across 2 source types, provisional tier none): "4 voices is under the floor of 5 for a ranked bank. Here is what they said, verified word for word, and a sheet of where to get the rest." The collection sheet (`build_docx.py sheet`, Letter paper) leads with his enquiry emails and call notes, then six public sources with exact search strings, and lists the four phrases heard so far. No closing line about the audit, because no bank was built.

@@ -26,7 +26,7 @@ Each pattern: what to watch for, why it hurts, a before and an after. `scripts/c
 - Watch for: "more security", "more peace of mind" with no figure.
 - Why: lazy and unprovable.
 - Before: Gives you more protection.
-- After: Cuts the unpaid work you carry from 14.000 € to 1.400 €.
+- After: Cuts the unpaid work you carry from $14,000 to $1,400.
 
 ### Announced honesty
 - Watch for: "to be honest", "I mean", "let's be real".
@@ -50,7 +50,7 @@ Each pattern: what to watch for, why it hurts, a before and an after. `scripts/c
 - Watch for: fraud, scam, scammer, dodgy, deadbeat, blacklist, insolvent, bankrupt.
 - Why: unfair to the client, and it can come back on the founder if forwarded.
 - Before: They are insolvent.
-- After: The register shows the status as 'in liquidation' as at 2 November 2026.
+- After: The register shows the status as 'Administratively Dissolved' as of November 3, 2026.
 
 ### Law
 - Watch for: "the law requires", "legally", "you are entitled", "statutory", any statute, section or code name.

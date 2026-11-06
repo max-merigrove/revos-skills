@@ -30,7 +30,7 @@ Expect to lose some clients. The ones most likely to leave over a fair, explaine
 The target is the fee that client would pay at the founder's own anchor. The first rule that applies:
 
 1. **The founder's target for that client** (`target_fee`), used as given.
-2. **The new-client price scaled by hours:** new-client price divided by the hours it buys, times this client's hours. "New clients pay 3,000 a month for about 12 hours" is 250 an hour; a client on 14 hours has a target of 3,500.
+2. **The new-client price scaled by hours:** new-client price divided by the hours it buys, times this client's hours. "New clients pay $4,500 a month for about 12 hours" is $375 an hour; a client on 14 hours has a target of $5,250.
 3. **An hourly target** the founder gives, times this client's hours.
 4. **The founder's own median:** the middle hourly rate across their own clients, times this client's hours. Said aloud as "your own median", with a note that the founder's new-client price would make it specific.
 
@@ -81,7 +81,7 @@ The skill never says a date meets a contract or a law. The founder confirms with
 - **Next twelve months** (working default window, from the send date): for each billing date in the window on or after the effective date, the new fee less the old, times the fee units billed (12 for an annual bill of a monthly fee, 1 for a quarterly fee billed quarterly). Project clients: the rise times the projects the founder expects a year, in proportion to the part of the window after the effective date.
 - **Run rate:** the full year once every dated step has landed: (last step fee less today's fee) times fee units a year.
 
-Both are shown so the notice delay is never hidden: "18,850 in the next 12 months; 25,800 a year once every step lands".
+Both are shown so the notice delay is never hidden: "$29,900 in the next 12 months; $40,800 a year once every step lands".
 
 ## 7. Break-even: how many clients can leave
 
@@ -98,11 +98,11 @@ The script checks the break-even against a brute-force pass over every subset of
 
 ## 8. Reasons, concessions, outcomes and the next wave
 
-**Reason ranking** (first that applies; a learning can reorder it): for a client the founder says was priced too low from the start, that fact ("I set your fee too low when we started, and I am putting that right"); then the founder's price for new clients, stated as a fact the client can check and set beside that client's own hours ("New clients now pay 2,800 a month for about 14 hours, which is 200 an hour; your work runs to about 22 hours a month"), so it is true for a client whose new fee is above the new-client price; with no hours for the client, the new-client price is used only when the new fee sits at or below it; how the scope has grown, in the founder's words; the date of the last change, if the founder states one (only for clients who were with them then); a cost the founder puts a figure on. None: the letter states the change plainly and the plan marks `[NEED: one true reason]`. People accept a rise that follows a real, explained reason and resent one that looks like it exploits them, so a checkable reason beats a vague one.
+**Reason ranking** (first that applies; a learning can reorder it): for a client the founder says was priced too low from the start, that fact ("I set your fee too low when we started, and I am putting that right"); then the founder's price for new clients, stated as a fact the client can check and set beside that client's own hours ("New clients now pay $2,800 a month for about 14 hours, which is $200 an hour; your work runs to about 22 hours a month"), so it is true for a client whose new fee is above the new-client price; with no hours for the client, the new-client price is used only when the new fee sits at or below it; how the scope has grown, in the founder's words; the date of the last change, if the founder states one (only for clients who were with them then); a cost the founder puts a figure on. None: the letter states the change plainly and the plan marks `[NEED: one true reason]`. People accept a rise that follows a real, explained reason and resent one that looks like it exploits them, so a checkable reason beats a vague one.
 
 **Concessions** are trades with end dates: a later start for a twelve-month commitment, half the step now and half three months later, a smaller scope at today's fee. Each goes on the Exceptions sheet with its end date and its cost against the plan in the window. A concession given for nothing, with no end date, becomes the new price.
 
-**Outcomes** (return run): accepted (the plan as sent), countered (the agreed fees and dates, logged as a concession with an end date: the day before the first agreed fee starts, or the next review), left (old fee until the end date, nothing after; the follow-up says what it would add if they paid the new fee on invoices before they went), held. Confirmations state only the agreed terms: a client staying at today's fee is told their fee "stays at" it until a date, never "from" the plan's step date. The realised twelve-month figure is set against the plan, with one plain verdict line ("Losing Oakridge cost 13,200 in the window; the rises that landed added 14,200").
+**Outcomes** (return run): accepted (the plan as sent), countered (the agreed fees and dates, logged as a concession with an end date: the day before the first agreed fee starts, or the next review), left (old fee until the end date, nothing after; the follow-up says what it would add if they paid the new fee on invoices before they went), held. Confirmations state only the agreed terms: a client staying at today's fee is told their fee "stays at" it until a date, never "from" the plan's step date. The realised twelve-month figure is set against the plan, with one plain verdict line ("Losing Oakridge cost $19,800 in the window; the rises that landed added $21,950").
 
 **Next wave:** clients still below target after the agreed fee, with their review date twelve months after their last step. Leavers drop out; nobody already moved is raised again before their review.
 

@@ -10,7 +10,7 @@ Written by Claude in the run folder. The scripts fill in every count; never writ
  "lang": "en",
  "english": "en-US",
  "offer": "Monthly bookkeeping for Shopify, Etsy and Amazon sellers",
- "buyer": "Small ecommerce sellers in the US and Canada",
+ "buyer": "Small ecommerce sellers in the US",
  "uses_first": "Meta ads first, then posts, then a lead magnet",
  "avoid_angle_types": [],
  "never_say": ["load shedding"],

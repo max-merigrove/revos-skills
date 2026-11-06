@@ -27,7 +27,7 @@ Your next message does useful work. Do not describe the skill or ask to begin. R
 
 Look for `revos-lead-magnet-factory-memory.md`: the working folder's `merigrove-memory/` subfolder, then files attached to this chat, then the Project's files (on claude.ai, write Project text unchanged to `<scratch>/memory.md`). If found, run `python3 scripts/memory_tool.py read <file> --json-out <scratch>/memory.json`, then:
 
-1. Say in one line what you are using: "Using your saved offer (6 month programme, SGD 9,000), call link, fit rule (three or more reports) and sign-off."
+1. Say in one line what you are using: "Using your saved offer (6 month program, $9,000), call link, fit rule (three or more reports) and sign-off."
 2. Ask nothing the profile answers. Apply every `active` learning at the step it names. A `watch` learning is applied only when the founder's message points the same way, and you say so out loud ("A checklist, as you leaned towards last time"); it stays `watch` until they approve it.
 3. Ask at most one question on a return run: "New lead magnet on a new topic, or rebuild the last one? If rebuild, say in a line what went wrong." Skip it when their message already says.
 4. A new magnet's topic must differ from every topic in Magnets built; its subject lines must not repeat any listed there (`emails.py` checks them when you put them in `previous_subjects`).

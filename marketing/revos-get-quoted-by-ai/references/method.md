@@ -55,7 +55,7 @@ Rules, enforced by `queries.py validate`:
 
 - 5 to 12 questions kept; 8 run first (heard questions first, then one per family). The quick panel is the first 5.
 - Every question is tagged `heard` (the buyer's words, with the quote found in what the founder pasted) or `derived` (built from offer words that appear in what the founder pasted). None is invented.
-- A heard message written to the founder ("do you shoot at our restaurant or in the studio?", "we have 40 dishes, how long?") names no service and no place, so pasted into an assistant it tests nothing about the business. It is reworded as a buyer asks an assistant ("Do food photographers in Bengaluru shoot at the restaurant or in a studio?"), the buyer's words kept beside it, and marked reworded.
+- A heard message written to the founder ("do you shoot at our restaurant or in the studio?", "we have 40 dishes, how long?") names no service and no place, so pasted into an assistant it tests nothing about the business. It is reworded as a buyer asks an assistant ("Do food photographers in Austin shoot at the restaurant or in a studio?"), the buyer's words kept beside it, and marked reworded.
 - A question reads as a question a person would type, never a keyword string.
 - No unbranded question contains the business name: buyers who do not know you would not type it.
 - A local business keeps its place (city or suburb) in at least three of the questions run first, and in three of the five quick ones, because the quick panel is often the only test a busy founder runs.

@@ -9,7 +9,7 @@ Write `<scratch>/inputs.json`. Copy every figure and date exactly as the founder
 | Field | What goes in | Default if left out |
 |---|---|---|
 | `date` | Today's date, ISO | the system date |
-| `send_date` | When the letters go, as the founder said it ("2 November", "next Monday", "thursday") | today, flagged, every letter HOLD |
+| `send_date` | When the letters go, as the founder said it ("November 3", "next Monday", "thursday") | today, flagged, every letter HOLD |
 | `business`, `founder_name`, `sign_off` | As given | blank; sign-off "[your name]" |
 | `currency`, `country` | ISO codes, from what they said or an unambiguous symbol or city | none assumed; ask once if nothing shows it |
 | `english` | `en-US` only when the founder writes American English | British spellings in the skill's own wording |
@@ -25,7 +25,7 @@ Write `<scratch>/inputs.json`. Copy every figure and date exactly as the founder
 | `billing_day` | The day invoices go out | 1 |
 | `notice`, `notice_align` | The founder's usual notice as typed ("30 days", "3 Monate zum Quartalsende"); the script reads a month or quarter end from the text, or set `notice_align` to `month_end` or `quarter_end` | planning default 60 days, HOLD |
 | `notice_default` | Only if the founder wants a different planning default | 60 days |
-| `start_no_earlier` | "From April", "not before 1 March" | none |
+| `start_no_earlier` | "From April", "not before March 1" | none |
 | `last_change` | The founder's words for when their fees last changed ("about three years", "2023") | none |
 | `cost_fact` | A cost the founder put a figure on ("my software went from 400 to 520 a month") | none |
 | `hour_value` | What a freed hour is worth to them, only if they say | none; no refill line |
@@ -80,7 +80,7 @@ Write `<scratch>/inputs.json`. Copy every figure and date exactly as the founder
 
 ## 4. The readback
 
-One line, in the founder's currency and number style, before the plan: how many clients, the billing pattern, the hours between them, what you took as the anchor, and what you could not read. "I read 6 monthly retainers in pounds, 72 hours a month between them, new clients at 3,000 for about 12 hours, billed on the 1st; no notice for Lumen or Dr Patel." Hours drive the targets most, so say which clients have none.
+One line, in the founder's currency and number style, before the plan: how many clients, the billing pattern, the hours between them, what you took as the anchor, and what you could not read. "I read 6 monthly retainers in dollars, 72 hours a month between them, new clients at $4,500 for about 12 hours, billed on the 1st; no notice for Lumen or Dr Patel." Hours drive the targets most, so say which clients have none.
 
 ## 5. What to catch, early
 
@@ -99,11 +99,11 @@ One line, in the founder's currency and number style, before the plan: how many 
 `memory.py read` gives `previous.json` with the plan locked as sent (`fixed_steps`). Add `outcomes`, one per client the founder mentions:
 
 ```
-{"client": "Penrose Foods", "result": "countered", "terms": [{"fee": "1,150", "from": "1 July 2027"}],
- "until": "30 June 2027", "conceded": "stays at 950 until 30 June 2027, then 1,150", "said": "can't do it before June"}
-{"client": "Oakridge Dental", "result": "left", "end_date": "31 December 2026"}
-{"client": "Kestrel Labs", "result": "countered", "terms": [{"fee": "2,400"}]}
-{"client": "Hartley & Co", "result": "accepted"}
+{"client": "Penrose Foods", "result": "countered", "terms": [{"fee": "1,750", "from": "July 1 2027"}],
+ "until": "June 30 2027", "conceded": "stays at $1,400 until June 30, 2027, then $1,750", "said": "can't do it before June"}
+{"client": "Oakridge Dental", "result": "left", "end_date": "December 31 2026"}
+{"client": "Kestrel Labs", "result": "countered", "terms": [{"fee": "3,600"}]}
+{"client": "Hartley & Co.", "result": "accepted"}
 ```
 
-Set `date` to today. Set `hour_value` only if the founder gave one. If an answer is ambiguous ("renewed but only at 2,400": a one-off or the fee to keep?), take the plain reading, say it, and ask that one question.
+Set `date` to today. Set `hour_value` only if the founder gave one. If an answer is ambiguous ("renewed but only at $3,600": a one-off or the fee to keep?), take the plain reading, say it, and ask that one question.

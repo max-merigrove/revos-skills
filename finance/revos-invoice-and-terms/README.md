@@ -18,7 +18,7 @@ Send invoices that are right first time: give it your details, the client and th
 
 > Use revos-invoice-and-terms to make an invoice. Here is what I have: (paste your last invoice, the client's email, your proposal, or just tell me who it is for, what you did and when, the price, and how you get paid)
 
-Rough is fine: "Invoice Harbour Bakeries for the website, 3 days at 950 a day plus 212.40 travel, last invoice was 0041, pay in 14 days" is enough to start. It shows you a draft in the first reply and asks only what is missing.
+Rough is fine: "Invoice Harbor Street Bakery for the website, 3 days at $950 a day plus $212.40 travel, last invoice was 0041, pay in 15 days" is enough to start. It shows you a draft in the first reply and asks only what is missing.
 
 ## What you get
 

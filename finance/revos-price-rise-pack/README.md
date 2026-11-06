@@ -18,7 +18,7 @@ Raise your fees and know how many clients you can lose. Paste your clients and w
 
 > Use revos-price-rise-pack to plan a price rise for my clients. Here they are, with what each pays: (paste a sheet, an invoice export, or just names and figures)
 
-You can be rough: "Hartley 1,800 a month since 2021, about 14 hours; Penrose 950, 9 hours; new clients pay 3,000 for about 12 hours; 30 days' notice" is enough to start. A notes column, a client listed twice or a notice like "3 months to quarter end" is fine: you get a first plan in the first reply, then at most five questions.
+You can be rough: "Hartley $2,800 a month since 2021, about 14 hours; Penrose $1,400, 9 hours; new clients pay $4,500 for about 12 hours; 30 days' notice" is enough to start. A notes column, a client listed twice or a notice like "3 months to quarter end" is fine: you get a first plan in the first reply, then at most five questions.
 
 ## What you get
 

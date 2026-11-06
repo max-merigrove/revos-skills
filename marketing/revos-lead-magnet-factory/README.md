@@ -18,7 +18,7 @@ Turn what you are known for into a list builder in an afternoon. Give it one top
 
 > Use revos-lead-magnet-factory. I sell (what) to (who) for (price). People always ask me (the question). Build me a freebie that gets the right people onto a call. Here is what I have: (paste your talk outline, offer page or notes)
 
-Rough is fine: "bookkeeper for Shopify stores, $1,200 a month, they always ask why there's no money in the account when sales are up, no tyre kickers please" is enough to start.
+Rough is fine: "bookkeeper for Shopify stores, $1,200 a month, they always ask why there's no money in the account when sales are up, no tire kickers please" is enough to start.
 
 ## What you get
 

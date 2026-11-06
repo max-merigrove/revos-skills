@@ -2,7 +2,7 @@
 
 `magnet.json` is the single source. `magnet.py build` makes every file from it, so the page, the printable copy and the launch pack cannot disagree.
 
-Start it with `python3 scripts/magnet.py init --format scorecard|checklist|guide --out <scratch>/magnet.json`: every field is in place with `FILL: what goes here` as its value, and `validate` refuses any `FILL:` left, so a half-written spec never builds. A complete, valid scorecard spec to compare against is in `assets/spec-template.json` (the Gothenburg studio from `references/examples.md`).
+Start it with `python3 scripts/magnet.py init --format scorecard|checklist|guide --out <scratch>/magnet.json`: every field is in place with `FILL: what goes here` as its value, and `validate` refuses any `FILL:` left, so a half-written spec never builds. A complete, valid scorecard spec to compare against is in `assets/spec-template.json` (the Denver studio from `references/examples.md`).
 
 Contents: 1 Top level. 2 The scorecard. 3 Checklist and guide. 4 The launch pack. 5 When code cannot run.
 
@@ -14,7 +14,7 @@ Contents: 1 Top level. 2 The scorecard. 3 Checklist and guide. 4 The launch pack
 | `date` | Build date, YYYY-MM-DD (file names use it; documents show it in the founder's date order) |
 | `hosting` | Where the page will live, in the founder's words ("her own website", "cannot host a page") |
 | `founder` | `name`, `first_name`, `business`, `country` (two letters), `spelling` (british, american, australian, canadian, indian), `decimal` (dot or comma), `currency` (three letters), `signoff`, `never_words` (list), `we` (true when the founders write as "we") |
-| `offer` | `name`, `price_as_typed` (exactly as they wrote it: "€ 4.800,-"), optional `price_value`, `link` (booking or reply route), `route` (book, reply, buy) |
+| `offer` | `name`, `price_as_typed` (exactly as they wrote it: "$4.8K"), optional `price_value`, `link` (booking or reply route), `route` (book, reply, buy) |
 | `sources` | Files holding what the founder pasted, exactly as given, relative to the spec |
 | `founder_replies` | Their answers to your questions, as they wrote them |
 | `topic` | `slug`, `problem`, `source_line` (copied exactly), `source` (the kind of source, such as "a client email" or "your call notes"; never a client's name), `inferred` (true when not quoted), `runners_up` (two: `topic`, `why_not`), `format_reason`, `not_given_away`, `drafted` (what you drafted for them to read as the expert), `previous` (rebuild only: what changed) |

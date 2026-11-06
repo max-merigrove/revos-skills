@@ -20,7 +20,7 @@ The fastest pipeline you can build is the one you already have. Paste your old l
 
 > Use revos-dead-lead-revival. These are my old leads, can you sort out who to chase and what to say? (paste your notes, or attach a CRM export or spreadsheet)
 
-Messy is fine: "Dan, ghosted after the proposal in January" or "Sarah K, budget frozen till Q3" is enough. A HubSpot, Pipedrive or Xero export works as it comes, in your own date and number format. Column headers and common notes are recognised in English, German, French and Spanish, with headers also in Italian, Dutch and Portuguese; notes in other languages are read by Claude, and every reading it is unsure of is shown to you to correct.
+Messy is fine: "Dan, ghosted after the proposal in January" or "Sarah K, budget frozen till Q3" is enough. A HubSpot, Pipedrive or Xero export works as it comes, in your own date and number format. Column headers and common notes are recognized in English, German, French and Spanish, with headers also in Italian, Dutch and Portuguese; notes in other languages are read by Claude, and every reading it is unsure of is shown to you to correct.
 
 ## What you get
 
