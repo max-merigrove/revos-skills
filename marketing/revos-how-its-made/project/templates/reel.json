@@ -1,0 +1,12 @@
+{
+  "title": "{{TITLE}}",
+  "voice": "assets/vo.wav",
+  "transcript": "assets/transcript.json",
+  "tail": 0.9,
+  "fadeOut": 0.6,
+  "look": { "exposure": 1.05, "vignette": 0.6, "grain": 0.03 },
+  "bloom": { "strength": 0.45, "radius": 0.5, "threshold": 0.85 },
+  "shots": [{ "id": "hook", "marks": {}, "callouts": [], "stats": [] }],
+  "plates": [],
+  "captions": { "highlight": [], "fix": {} }
+}
